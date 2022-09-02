@@ -1512,3 +1512,79 @@ cssvrsc:f45f6c8ef56563dd5fe289d6817c3a398df2a29fc9fad70d5114d6a5a1fa3815 a owl:N
 cssvrsc:2ea8014113d1baad45397361a10c5b39e782ca8b5765b0f8144aea8615fa552b a owl:NamedIndividual,
         org:Organization ;
     skos:prefLabel "OASIS (https://www.oasis-open.org/)"^^xsd:string .
+
+cssvrsc:4c545531-9aed-416b-abaf-248b714cbe82 a schema:ContactPoint,
+        owl:NamedIndividual ;
+    cssv:isContactPointOf cssvrsc:ac238409c453c2f386dcbc77523fa03f0cf621660f5742ffb78cc942f25f8d17 ;
+    schema:email "NaN"^^xsd:double .
+
+cssvrsc:9820db589c536cbbfbb653647fabbe7a4b5dda36f9a54f0e40da9e16e66cfc64 a cssv:Specification,
+        owl:NamedIndividual ;
+    cssv:isMaintainedBy cssvrsc:ac238409c453c2f386dcbc77523fa03f0cf621660f5742ffb78cc942f25f8d17 ;
+    dct:title "Electronic Signatures and Infrastructures (ESI);Testing Conformance and Interoperability of Trusted Lists; Part 1: Specifications for testing conformance of XML representation of Trusted Lists"@en ;
+    dcat:distribution cssvrsc:f4b05373-13f5-4f57-ac14-8f1617408122 .
+
+cssvrsc:f4b05373-13f5-4f57-ac14-8f1617408122 a owl:NamedIndividual,
+        dcat:Distribution ;
+    dcat:accessURL "https://www.etsi.org/deliver/etsi_ts/119600_119699/11961401/01.01.01_60/ts_11961401v010101p.pdf"^^xsd:anyURI .
+
+cssvrsc:ac238409c453c2f386dcbc77523fa03f0cf621660f5742ffb78cc942f25f8d17 a owl:NamedIndividual,
+        org:Organization ;
+    skos:prefLabel "ETSI (https://www.etsi.org/)"^^xsd:string . 
+
+cssvrsc:606cbdce-a6ff-43f6-9cf6-1246e3ebf275 a schema:ContactPoint,
+        owl:NamedIndividual ;
+    cssv:isContactPointOf cssvrsc:2ea8014113d1baad45397361a10c5b39e782ca8b5765b0f8144aea8615fa552b ;
+    schema:email "NaN"^^xsd:double .
+
+cssvrsc:b059e5051bb83f9abf3009b747716a429d552c29ffec38039c830dbe2f45a1b9 a cssv:Specification,
+        owl:NamedIndividual ;
+    cssv:isMaintainedBy cssvrsc:2ea8014113d1baad45397361a10c5b39e782ca8b5765b0f8144aea8615fa552b ;
+    dct:title "Universal Business Language (UBL)"@en ;
+    dcat:distribution cssvrsc:7898e8e9-a243-4357-b800-757e20668eb3 .
+
+cssvrsc:7898e8e9-a243-4357-b800-757e20668eb3 a owl:NamedIndividual,
+        dcat:Distribution ;
+    dcat:accessURL "http://docs.oasis-open.org/ubl/os-UBL-2.3/UBL-2.3.html"^^xsd:anyURI .
+
+cssvrsc:2ea8014113d1baad45397361a10c5b39e782ca8b5765b0f8144aea8615fa552b a owl:NamedIndividual,
+        org:Organization ;
+    skos:prefLabel "OASIS (https://www.oasis-open.org/)"^^xsd:string . 
+
+cssvrsc:3334676fb903ed79b14367e4eb1f136f3ac751a22cd4a10e1016032fd5a69c45 a cssv:Specification,
+        owl:NamedIndividual ;
+    cssv:isMaintainedBy cssvrsc:ac238409c453c2f386dcbc77523fa03f0cf621660f5742ffb78cc942f25f8d17 ;
+    dct:title "Electronic Signatures and Infrastructures (ESI); Registered Electronic Mail (REM) Services; Part 3: Formats (ETSI EN 319 532-3)"@en ;
+    dcat:distribution cssvrsc:e36d7f9f-568f-4e9a-a04f-bf44e127c65d .
+
+cssvrsc:f795d60a-12be-4b86-b410-eb27d265f708 a schema:ContactPoint,
+        owl:NamedIndividual ;
+    cssv:isContactPointOf cssvrsc:ac238409c453c2f386dcbc77523fa03f0cf621660f5742ffb78cc942f25f8d17 ;
+    schema:email "NaN"^^xsd:double .
+
+cssvrsc:e36d7f9f-568f-4e9a-a04f-bf44e127c65d a owl:NamedIndividual,
+        dcat:Distribution ;
+    dcat:accessURL "http://www.etsi.org/deliver/etsi_en/319500_319599/31953203/01.02.01_60/en_31953203v010201p.pdf"^^xsd:anyURI .
+
+cssvrsc:ac238409c453c2f386dcbc77523fa03f0cf621660f5742ffb78cc942f25f8d17 a owl:NamedIndividual,
+        org:Organization ;
+    skos:prefLabel "ETSI (https://www.etsi.org/)"^^xsd:string . 
+
+cssvrsc:34768bf6-d5d8-45d7-ad08-e129d53e7d68 a schema:ContactPoint,
+        owl:NamedIndividual ;
+    cssv:isContactPointOf cssvrsc:ac238409c453c2f386dcbc77523fa03f0cf621660f5742ffb78cc942f25f8d17 ;
+    schema:email "NaN"^^xsd:double .
+
+cssvrsc:e5b93bfdb3252d290b8d69275202406c6a66d38f3b85d1afc7dd834d4e0c3085 a cssv:Specification,
+        owl:NamedIndividual ;
+    cssv:isMaintainedBy cssvrsc:ac238409c453c2f386dcbc77523fa03f0cf621660f5742ffb78cc942f25f8d17 ;
+    dct:title "ETSI TS 119 512 Electronic Signatures and Infrastructures (ESI); Protocols for trust service providers providing long-term data preservation services"@en ;
+    dcat:distribution cssvrsc:f4672b91-aead-44e4-868b-420a042b8f36 .
+
+cssvrsc:f4672b91-aead-44e4-868b-420a042b8f36 a owl:NamedIndividual,
+        dcat:Distribution ;
+    dcat:accessURL "https://www.etsi.org/deliver/etsi_ts/119500_119599/119512/01.01.02_60/ts_119512v010102p.pdf"^^xsd:anyURI .
+
+cssvrsc:ac238409c453c2f386dcbc77523fa03f0cf621660f5742ffb78cc942f25f8d17 a owl:NamedIndividual,
+        org:Organization ;
+    skos:prefLabel "ETSI (https://www.etsi.org/)"^^xsd:string .     
