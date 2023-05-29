@@ -28,7 +28,7 @@ cssvrsc:090002fd65228fad1e1f27c75c010e1d2d281e846b97647bd072d2cc25684737 a cssv:
 
 cssvrsc:09d5f955aa3f2e89a91b884839963a35be68332c58006c53d8d7f88e882cb4fa a cssv:Specification,
         owl:NamedIndividual ;
-    cssv:isMaintainedBy cssvrsc:35d317bf5ee5f9080ac657da5237232cdba5d984a0bfbd88af91fbb8c659d506 ;
+    cssv:isMaintainedBy cssvrsc:ae678f758b202e4b7c0d51efbf969a84567e57de519e0f2f58a658028b47756a ;
     dct:title "Core Public Organisation Vocabulary (CPOV)"@en ;
     dcat:distribution cssvrsc:fda0a69c-3cf3-4014-a53a-6282663d7c87 .
 
@@ -40,7 +40,7 @@ cssvrsc:0df446c93fc7fc59add5449d846f47101b10b6e30e88a143d6c523aad8117c28 a cssv:
 
 cssvrsc:121193a8e270bc9666904b77a28db8810a9a0313df7bee88f2c572d3483e0e4e a cssv:Specification,
         owl:NamedIndividual ;
-    cssv:isMaintainedBy cssvrsc:35d317bf5ee5f9080ac657da5237232cdba5d984a0bfbd88af91fbb8c659d506 ;
+    cssv:isMaintainedBy cssvrsc:856351aaa9f1b4b97082dcedd9f83fb3377475e608085ff8ea6f80f723a593a1 ;
     dct:title "Better Regulation Toolbox"@en ;
     dcat:distribution cssvrsc:8ba698ea-f0d8-4a47-a468-18026ba7a99c .
 
@@ -209,7 +209,7 @@ cssvrsc:8164f5e6cd50bf02a11c615929ebf80147032647fced20c32e19af42e3155f3d a cssv:
 
 cssvrsc:83adcfe7fd6d09d1d78d43905709f9566f30e9378e845fa0e04c258537c153e4 a cssv:Standard,
         owl:NamedIndividual ;
-    cssv:isMaintainedBy cssvrsc:35d317bf5ee5f9080ac657da5237232cdba5d984a0bfbd88af91fbb8c659d506 ;
+    cssv:isMaintainedBy cssvrsc:ae678f758b202e4b7c0d51efbf969a84567e57de519e0f2f58a658028b47756a ;
     dct:title "Data Catalog Vocabulary - Application Profile for European Data Portals (DCAT-AP 2.0)"@en ;
     dcat:distribution cssvrsc:eddfffc7-b79c-4474-8e73-b26b1c262122 .
 
@@ -245,7 +245,7 @@ cssvrsc:8a916a4e691160766a614b39edf0854771934328f3feb60800f25e46b8d4ce62 a cssv:
 
 cssvrsc:8cff6895f914429bde643c73dec425ec687d14cd27aee8c861fb5341e5dcd8d5 a cssv:Specification,
         owl:NamedIndividual ;
-    cssv:isMaintainedBy cssvrsc:35d317bf5ee5f9080ac657da5237232cdba5d984a0bfbd88af91fbb8c659d506 ;
+    cssv:isMaintainedBy cssvrsc:ae678f758b202e4b7c0d51efbf969a84567e57de519e0f2f58a658028b47756a ;
     dct:title "Core Criterion and Core Evidence Vocabulary (CCCEV) v1.0"@en ;
     dcat:distribution cssvrsc:c6b549be-7b5e-4971-9a6a-ad9298bd1a2a .
 
@@ -310,7 +310,7 @@ cssvrsc:a4a7987e596ba4b307e31ac3ee5f8011e0bc7baf38f31bdda3122c2d25cd461e a cssv:
 
 cssvrsc:a5e285ce592fea5c490319fb4731e4aac5db6c4430c8a3b8011b4dbc5121cda8 a cssv:Specification,
         owl:NamedIndividual ;
-    cssv:isMaintainedBy cssvrsc:35d317bf5ee5f9080ac657da5237232cdba5d984a0bfbd88af91fbb8c659d506 ;
+    cssv:isMaintainedBy cssvrsc:ae678f758b202e4b7c0d51efbf969a84567e57de519e0f2f58a658028b47756a ;
     dct:title "Core Location Vocabulary (CLV) v1.0"@en ;
     dcat:distribution cssvrsc:cd7f827a-64c2-49ea-a869-16c4bc79c1d8 .
 
@@ -364,7 +364,7 @@ cssvrsc:d3ddf753507c5d8f00ff0da81e4c5fc9a455cd5963a551bdd0162cee8275f21a a cssv:
 
 cssvrsc:d5d426fadecd4bf723cb15532e2bb495aaaca594936ba8891258988920564c43 a cssv:Specification,
         owl:NamedIndividual ;
-    cssv:isMaintainedBy cssvrsc:35d317bf5ee5f9080ac657da5237232cdba5d984a0bfbd88af91fbb8c659d506 ;
+    cssv:isMaintainedBy cssvrsc:ae678f758b202e4b7c0d51efbf969a84567e57de519e0f2f58a658028b47756a ;
     dct:title "Registered Organization Vocabulary (RegOrg)"@en ;
     dcat:distribution cssvrsc:d1f56ac3-c429-46b9-85b3-9a74a80a3a20 .
 
@@ -376,7 +376,7 @@ cssvrsc:d7dffc53ea55b3fab31ed77bd491c7d5cc9872e0749e9c05e4c29b06a834d3cf a cssv:
 
 cssvrsc:dd3c03c70c338994d0cb5a38c92ea1920f2526959fa7fa1bcb1d6f4eb345374a a cssv:Specification,
         owl:NamedIndividual ;
-    cssv:isMaintainedBy cssvrsc:35d317bf5ee5f9080ac657da5237232cdba5d984a0bfbd88af91fbb8c659d506 ;
+    cssv:isMaintainedBy cssvrsc:856351aaa9f1b4b97082dcedd9f83fb3377475e608085ff8ea6f80f723a593a1 ;
     dct:title "Eurovoc"@en ;
     dcat:distribution cssvrsc:27acc78a-101d-46b8-af9d-5cac2630daa4 .
 
@@ -454,7 +454,7 @@ cssvrsc:f39e0c3fe498a946e23682510bb840044afdc3d4163eb44397f2606d4a166183 a cssv:
 
 cssvrsc:f4314f9cf9c8e1b1f57df755f3c11d9797e235f51e0f4bebf15035b1ac4a0074 a cssv:Specification,
         owl:NamedIndividual ;
-    cssv:isMaintainedBy cssvrsc:35d317bf5ee5f9080ac657da5237232cdba5d984a0bfbd88af91fbb8c659d506 ;
+    cssv:isMaintainedBy cssvrsc:ae678f758b202e4b7c0d51efbf969a84567e57de519e0f2f58a658028b47756a ;
     dct:title "Core Public Service Vocabulary Application Profile (CPSV-AP) v2.2"@en ;
     dcat:distribution cssvrsc:c511d561-3c88-4872-8359-cde825fa0f28 .
 
@@ -1219,3 +1219,137 @@ cssvrsc:7fa1cb50b03a684843349c75a6533a376020f0c71a4829a4aa250554a5c33896 a cssv:
 cssvrsc:637d6194-586f-4212-acae-ca4bcbfa71d3 a owl:NamedIndividual,
         dcat:Distribution ;
     dcat:accessURL "https://www.etsi.org/deliver/etsi_ts/119600_119699/119612/02.02.01_60/ts_119612v020201p.pdf"^^xsd:anyURI .
+
+cssvrsc:cdd3db55172ddc4986781cfa1582e3985bea6302012f87183badb44c03d78c67 a cssv:Specification,
+        owl:NamedIndividual ;
+    cssv:isMaintainedBy cssvrsc:f45f6c8ef56563dd5fe289d6817c3a398df2a29fc9fad70d5114d6a5a1fa3815 ;
+    dct:title "eXtensible Markup Language (XML)"@en ;
+    dcat:distribution cssvrsc:a77fe5d2-a7ee-4bd3-97cc-3459f0d78eec .
+
+cssvrsc:5a81cfea70a5750d4d899c039ab586661f3b8396353955c0c98460e5eae19f25 a cssv:Specification,
+        owl:NamedIndividual ;
+    cssv:isMaintainedBy cssvrsc:888cf0b93c3579f6c2782f5252e66631753f4654323c600c5df8c573d796c37b ;
+    dct:title "Unicode transformation Format (UTF-8)"@en ;
+    dcat:distribution cssvrsc:b9c28a8a-b2e1-40dd-8176-39c3e08e49aa .
+
+cssvrsc:7964582a49282cc2cc3d8eb8557c09a62de0a0484cb283e12456b05b4a4dc365 a cssv:Specification,
+        owl:NamedIndividual ;
+    cssv:isMaintainedBy cssvrsc:f45f6c8ef56563dd5fe289d6817c3a398df2a29fc9fad70d5114d6a5a1fa3815 ;
+    dct:title "Resource Description Framework (RDF)"@en ;
+    dcat:distribution cssvrsc:cda3ef8c-dc4f-4bf3-91f9-a0222dabdc28 .
+
+cssvrsc:1b75f4ca20684fc90cca1e5b08ed02031961d55633edb759f2b73acace31a1c2 a cssv:Specification,
+        owl:NamedIndividual ;
+    cssv:isMaintainedBy cssvrsc:2ea8014113d1baad45397361a10c5b39e782ca8b5765b0f8144aea8615fa552b ;
+    dct:title "Transformational Government Framework (TGF)"@en ;
+    dcat:distribution cssvrsc:a64acb3d-be50-451b-9751-091470ed6527 .
+
+cssvrsc:a64acb3d-be50-451b-9751-091470ed6527 a owl:NamedIndividual,
+        dcat:Distribution ;
+    dcat:accessURL "http://docs.oasis-open.org/tgf/TGF/v2.0/cs01/TGF-v2.0-cs01.html"^^xsd:anyURI .
+
+cssvrsc:a546531b-8283-41c4-a36e-13381e9762b7 a schema:ContactPoint,
+        owl:NamedIndividual ;
+    cssv:isContactPointOf cssvrsc:32f0b4a6b0d75bb7ca172d51d442d67c5f2e39a6517d1c019b70cbfb4374b266 ;
+    schema:email "NaN"^^xsd:double .
+
+cssvrsc:c7bc3df6ea8e8cf26a2b32c4ba12b112663af6843a638875c6bcf7d1963ec89c a cssv:Specification,
+        owl:NamedIndividual ;
+    cssv:isMaintainedBy cssvrsc:32f0b4a6b0d75bb7ca172d51d442d67c5f2e39a6517d1c019b70cbfb4374b266 ;
+    dct:title "Open Archival Information System (OAIS)"@en ;
+    dcat:distribution cssvrsc:6b880fdf-f0c9-45b5-b3bb-527f70b74b74 .
+
+cssvrsc:6b880fdf-f0c9-45b5-b3bb-527f70b74b74 a owl:NamedIndividual,
+        dcat:Distribution ;
+    dcat:accessURL "https://public.ccsds.org/Pubs/650x0m2.pdf"^^xsd:anyURI .
+
+cssvrsc:32f0b4a6b0d75bb7ca172d51d442d67c5f2e39a6517d1c019b70cbfb4374b266 a owl:NamedIndividual,
+        org:Organization ;
+    skos:prefLabel "Consultative Committee for for Space Data Systems (CCSDS)"^^xsd:string .
+
+cssvrsc:7122aacd-f638-4d02-84fd-4f03112457b5 a schema:ContactPoint,
+        owl:NamedIndividual ;
+    cssv:isContactPointOf cssvrsc:ae678f758b202e4b7c0d51efbf969a84567e57de519e0f2f58a658028b47756a ;
+    schema:email "NaN"^^xsd:double .
+
+cssvrsc:ae678f758b202e4b7c0d51efbf969a84567e57de519e0f2f58a658028b47756a a owl:NamedIndividual,
+        org:Organization ;
+    skos:prefLabel "European Commission (SEMIC)"^^xsd:string .
+
+cssvrsc:ebe8214cb0de30595ab51ff004ef59917ae008b670dd0ec8c62bf7d74bf05ee1 a cssv:Specification,
+        owl:NamedIndividual ;
+    cssv:isMaintainedBy cssvrsc:ae678f758b202e4b7c0d51efbf969a84567e57de519e0f2f58a658028b47756a ;
+    dct:title "Data Catalogue Vocabulary Application Profile (DCAT-AP)"@en ;
+    dcat:distribution cssvrsc:eddfffc7-b79c-4474-8e73-b26b1c262122 .
+
+cssvrsc:6d456546-3cbf-4609-b75a-a19b93975649 a schema:ContactPoint,
+        owl:NamedIndividual ;
+    cssv:isContactPointOf cssvrsc:856351aaa9f1b4b97082dcedd9f83fb3377475e608085ff8ea6f80f723a593a1 ;
+    schema:email "NaN"^^xsd:double .
+
+cssvrsc:856351aaa9f1b4b97082dcedd9f83fb3377475e608085ff8ea6f80f723a593a1 a owl:NamedIndividual,
+        org:Organization ;
+    skos:prefLabel "European Commission (EU Publications Office)"^^xsd:string .
+
+cssvrsc:ecc673485eee92ab636dd0c2ee70310a542bc6a8ec8c3ea84ae0cedd9e0de303 a cssv:Specification,
+        owl:NamedIndividual ;
+    cssv:isMaintainedBy cssvrsc:856351aaa9f1b4b97082dcedd9f83fb3377475e608085ff8ea6f80f723a593a1 ;
+    dct:title "European Single Procurement Document (ESPD) data model (ESPD-EDM)"@en ;
+    dcat:distribution cssvrsc:60470c09-35be-4e52-9be3-94af76095514 .
+
+cssvrsc:60470c09-35be-4e52-9be3-94af76095514 a owl:NamedIndividual,
+        dcat:Distribution ;
+    dcat:accessURL "https://docs.ted.europa.eu/ESPD-EDM/latest/index.html"^^xsd:anyURI .
+
+cssvrsc:f490f8dd405f44a567d9e8d788808531b59df39e115e19086d5d038f9465bc1d a cssv:Specification,
+        owl:NamedIndividual ;
+    cssv:isMaintainedBy cssvrsc:f45f6c8ef56563dd5fe289d6817c3a398df2a29fc9fad70d5114d6a5a1fa3815 ;
+    dct:title "Data Catalog Vocabulary (DCAT)"@en ;
+    dcat:distribution cssvrsc:eddfffc7-b79c-4474-8e73-b26b1c262122 .
+
+cssvrsc:3738e9e2-7c7b-49e9-b7f7-a80f7b8948f0 a schema:ContactPoint,
+        owl:NamedIndividual ;
+    cssv:isContactPointOf cssvrsc:6f9429aabe60b28ad7aaa949f7343d2e854647da0dfe7ce226887cfeb2901652 ;
+    schema:email "NaN"^^xsd:double .
+
+cssvrsc:ee27322554e46143c3c56f419fc28b71a445380e4e5af7332aabdb87c7d0ec26 a cssv:Specification,
+        owl:NamedIndividual ;
+    cssv:isMaintainedBy cssvrsc:6f9429aabe60b28ad7aaa949f7343d2e854647da0dfe7ce226887cfeb2901652 ;
+    dct:title "GraphQL"@en ;
+    dcat:distribution cssvrsc:793252ad-aa7b-4fbf-a1ca-b880b95dd724 .
+
+cssvrsc:793252ad-aa7b-4fbf-a1ca-b880b95dd724 a owl:NamedIndividual,
+        dcat:Distribution ;
+    dcat:accessURL "https://graphql.org/"^^xsd:anyURI .
+
+cssvrsc:6f9429aabe60b28ad7aaa949f7343d2e854647da0dfe7ce226887cfeb2901652 a owl:NamedIndividual,
+        org:Organization ;
+    skos:prefLabel "GraphQL Foundation"^^xsd:string .
+
+cssvrsc:e4758e56eb60846408c6608ca3309836f2cb84c7ff44697aadcc08b531c57cae a cssv:Specification,
+        owl:NamedIndividual ;
+    cssv:isMaintainedBy cssvrsc:856351aaa9f1b4b97082dcedd9f83fb3377475e608085ff8ea6f80f723a593a1 ;
+    dct:title "AKN4EU"@en ;
+    dcat:distribution cssvrsc:59aee717-0099-42b0-972e-05f334d7ea97 .
+
+cssvrsc:59aee717-0099-42b0-972e-05f334d7ea97 a owl:NamedIndividual,
+        dcat:Distribution ;
+    dcat:accessURL "https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/akn4eu"^^xsd:anyURI .
+
+cssvrsc:f845180f611ff9304418ca261e8cd61abdc282f0a3cf891f96094a51a83065ce a cssv:Specification,
+        owl:NamedIndividual ;
+    cssv:isMaintainedBy cssvrsc:ae678f758b202e4b7c0d51efbf969a84567e57de519e0f2f58a658028b47756a ;
+    dct:title "Core Public Service Vocabulary Application Profile (CPSV-AP)"@en ;
+    dcat:distribution cssvrsc:c511d561-3c88-4872-8359-cde825fa0f28 .
+
+cssvrsc:a61e46d2918487a44fe12b59273afd2fd4326225041c92534ed339c600fc12ac a cssv:Specification,
+        owl:NamedIndividual ;
+    cssv:isMaintainedBy cssvrsc:ae678f758b202e4b7c0d51efbf969a84567e57de519e0f2f58a658028b47756a ;
+    dct:title "Core Criterion and Core Evidence Vocabulary (CCCEV)"@en ;
+    dcat:distribution cssvrsc:c6b549be-7b5e-4971-9a6a-ad9298bd1a2a .
+
+cssvrsc:e4940944a20f90dcd28ec5ccaa3bbd3cb74c15004568cc32968faeb0819a69a2 a cssv:Specification,
+        owl:NamedIndividual ;
+    cssv:isMaintainedBy cssvrsc:f45f6c8ef56563dd5fe289d6817c3a398df2a29fc9fad70d5114d6a5a1fa3815 ;
+    dct:title "Asset Description Metadata Schema (ADMS)"@en ;
+    dcat:distribution cssvrsc:7a6694ed-5916-43e2-98c8-66896b859507 .
