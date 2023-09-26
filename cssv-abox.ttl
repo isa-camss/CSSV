@@ -243,12 +243,6 @@ cssvrsc:8a916a4e691160766a614b39edf0854771934328f3feb60800f25e46b8d4ce62 a cssv:
     dct:title "Transport Layer Security 1.3 (TLS 1.3)"@en ;
     dcat:distribution cssvrsc:424e75ee-23d2-4d87-ae34-1f424d7328ae .
 
-cssvrsc:8cff6895f914429bde643c73dec425ec687d14cd27aee8c861fb5341e5dcd8d5 a cssv:Specification,
-        owl:NamedIndividual ;
-    cssv:isMaintainedBy cssvrsc:ae678f758b202e4b7c0d51efbf969a84567e57de519e0f2f58a658028b47756a ;
-    dct:title "Core Criterion and Core Evidence Vocabulary (CCCEV) v1.0"@en ;
-    dcat:distribution cssvrsc:c6b549be-7b5e-4971-9a6a-ad9298bd1a2a .
-
 cssvrsc:8d4a582d8a713997ae5cefbb6fca284d18f07e22a2b0e0913c92d3120bbf4e17 a cssv:Specification,
         owl:NamedIndividual ;
     cssv:isMaintainedBy cssvrsc:35d317bf5ee5f9080ac657da5237232cdba5d984a0bfbd88af91fbb8c659d506 ;
@@ -258,7 +252,7 @@ cssvrsc:8d4a582d8a713997ae5cefbb6fca284d18f07e22a2b0e0913c92d3120bbf4e17 a cssv:
 cssvrsc:925e55b370f9ffea12944d9c8101b4580966ac0c7400dbda721eee2eec544a4b a cssv:Specification,
         owl:NamedIndividual ;
     cssv:isMaintainedBy cssvrsc:f45f6c8ef56563dd5fe289d6817c3a398df2a29fc9fad70d5114d6a5a1fa3815 ;
-    dct:title "Data Catalogue Vocabulary 2.0 (DCAT 2)"@en ;
+    dct:title "Data Catalog Vocabulary (DCAT) - Version 2"@en ;
     dcat:distribution cssvrsc:5ea1af8b-4a24-4339-a3a9-615ef067f00c .
 
 cssvrsc:94120719cde2555408f1875b809aa1dd6c3b1762b9390648a9fa5b7cb62e0a5c a cssv:Specification,
@@ -401,7 +395,7 @@ cssvrsc:e41213fb14c1adb9399c01ba2716777ad755f60c7900cc97cbd7d16bc774452c a cssv:
 cssvrsc:e438965c54bc7f78e6ede46f4d408abe398302a3b33e374a9ed4662b8b44df99 a cssv:Specification,
         owl:NamedIndividual ;
     cssv:isMaintainedBy cssvrsc:f45f6c8ef56563dd5fe289d6817c3a398df2a29fc9fad70d5114d6a5a1fa3815 ;
-    dct:title "XML, Extensible Markup Language 1.1"@en ;
+    dct:title "eXtensible Markup Language (XML)"@en ;
     dcat:distribution cssvrsc:a77fe5d2-a7ee-4bd3-97cc-3459f0d78eec .
 
 cssvrsc:e4940944a20f90dcd28ec5ccaa3bbd3cb74c15004568cc32968faeb0819a69a2 a cssv:Specification,
@@ -449,7 +443,7 @@ cssvrsc:f2f2f35925cd025b8a049734cd1ad9c3343684abe4050795e84f86b36bece0c1 a cssv:
 cssvrsc:f39e0c3fe498a946e23682510bb840044afdc3d4163eb44397f2606d4a166183 a cssv:Specification,
         owl:NamedIndividual ;
     cssv:isMaintainedBy cssvrsc:888cf0b93c3579f6c2782f5252e66631753f4654323c600c5df8c573d796c37b ;
-    dct:title " UTF-8, a transformation format of ISO 10646"@en ;
+    dct:title "UTF-8"@en ;
     dcat:distribution cssvrsc:b9c28a8a-b2e1-40dd-8176-39c3e08e49aa .
 
 cssvrsc:f4314f9cf9c8e1b1f57df755f3c11d9797e235f51e0f4bebf15035b1ac4a0074 a cssv:Specification,
@@ -688,6 +682,10 @@ cssvrsc:bb02d997-c674-4d6b-8727-c26d2caeeb3c a owl:NamedIndividual,
 cssvrsc:bc9bf124-f1ec-4220-9f41-2c7c38f3fe83 a owl:NamedIndividual,
         dcat:Distribution ;
     dcat:accessURL "https://tools.ietf.org/html/rfc5246"^^xsd:anyURI .
+
+cssvrsc:5b83e8a9-f091-42a6-b5c6-56ecb8fa8203 a owl:NamedIndividual,
+        dcat:Distribution ;
+    dcat:accessURL "https://graphql.org/learn/"^^xsd:anyURI .
 
 cssvrsc:c01175b8-3c40-41c5-b254-00cfb4d9433d a owl:NamedIndividual,
         dcat:Distribution ;
@@ -1220,18 +1218,6 @@ cssvrsc:637d6194-586f-4212-acae-ca4bcbfa71d3 a owl:NamedIndividual,
         dcat:Distribution ;
     dcat:accessURL "https://www.etsi.org/deliver/etsi_ts/119600_119699/119612/02.02.01_60/ts_119612v020201p.pdf"^^xsd:anyURI .
 
-cssvrsc:cdd3db55172ddc4986781cfa1582e3985bea6302012f87183badb44c03d78c67 a cssv:Specification,
-        owl:NamedIndividual ;
-    cssv:isMaintainedBy cssvrsc:f45f6c8ef56563dd5fe289d6817c3a398df2a29fc9fad70d5114d6a5a1fa3815 ;
-    dct:title "eXtensible Markup Language (XML)"@en ;
-    dcat:distribution cssvrsc:a77fe5d2-a7ee-4bd3-97cc-3459f0d78eec .
-
-cssvrsc:5a81cfea70a5750d4d899c039ab586661f3b8396353955c0c98460e5eae19f25 a cssv:Specification,
-        owl:NamedIndividual ;
-    cssv:isMaintainedBy cssvrsc:888cf0b93c3579f6c2782f5252e66631753f4654323c600c5df8c573d796c37b ;
-    dct:title "Unicode transformation Format (UTF-8)"@en ;
-    dcat:distribution cssvrsc:b9c28a8a-b2e1-40dd-8176-39c3e08e49aa .
-
 cssvrsc:7964582a49282cc2cc3d8eb8557c09a62de0a0484cb283e12456b05b4a4dc365 a cssv:Specification,
         owl:NamedIndividual ;
     cssv:isMaintainedBy cssvrsc:f45f6c8ef56563dd5fe289d6817c3a398df2a29fc9fad70d5114d6a5a1fa3815 ;
@@ -1253,7 +1239,7 @@ cssvrsc:a546531b-8283-41c4-a36e-13381e9762b7 a schema:ContactPoint,
     cssv:isContactPointOf cssvrsc:32f0b4a6b0d75bb7ca172d51d442d67c5f2e39a6517d1c019b70cbfb4374b266 ;
     schema:email "NaN"^^xsd:double .
 
-cssvrsc:c7bc3df6ea8e8cf26a2b32c4ba12b112663af6843a638875c6bcf7d1963ec89c a cssv:Specification,
+cssvrsc:835a37b6f8f926c2c1b50b623f2fcd833ecb87d7e6b85b3b1732b4766bbadf8f a cssv:Specification,
         owl:NamedIndividual ;
     cssv:isMaintainedBy cssvrsc:32f0b4a6b0d75bb7ca172d51d442d67c5f2e39a6517d1c019b70cbfb4374b266 ;
     dct:title "Open Archival Information System (OAIS)"@en ;
@@ -1276,12 +1262,6 @@ cssvrsc:ae678f758b202e4b7c0d51efbf969a84567e57de519e0f2f58a658028b47756a a owl:N
         org:Organization ;
     skos:prefLabel "European Commission (SEMIC)"^^xsd:string .
 
-cssvrsc:ebe8214cb0de30595ab51ff004ef59917ae008b670dd0ec8c62bf7d74bf05ee1 a cssv:Specification,
-        owl:NamedIndividual ;
-    cssv:isMaintainedBy cssvrsc:ae678f758b202e4b7c0d51efbf969a84567e57de519e0f2f58a658028b47756a ;
-    dct:title "Data Catalogue Vocabulary Application Profile (DCAT-AP)"@en ;
-    dcat:distribution cssvrsc:eddfffc7-b79c-4474-8e73-b26b1c262122 .
-
 cssvrsc:6d456546-3cbf-4609-b75a-a19b93975649 a schema:ContactPoint,
         owl:NamedIndividual ;
     cssv:isContactPointOf cssvrsc:856351aaa9f1b4b97082dcedd9f83fb3377475e608085ff8ea6f80f723a593a1 ;
@@ -1300,12 +1280,6 @@ cssvrsc:ecc673485eee92ab636dd0c2ee70310a542bc6a8ec8c3ea84ae0cedd9e0de303 a cssv:
 cssvrsc:60470c09-35be-4e52-9be3-94af76095514 a owl:NamedIndividual,
         dcat:Distribution ;
     dcat:accessURL "https://docs.ted.europa.eu/ESPD-EDM/latest/index.html"^^xsd:anyURI .
-
-cssvrsc:f490f8dd405f44a567d9e8d788808531b59df39e115e19086d5d038f9465bc1d a cssv:Specification,
-        owl:NamedIndividual ;
-    cssv:isMaintainedBy cssvrsc:f45f6c8ef56563dd5fe289d6817c3a398df2a29fc9fad70d5114d6a5a1fa3815 ;
-    dct:title "Data Catalog Vocabulary (DCAT)"@en ;
-    dcat:distribution cssvrsc:eddfffc7-b79c-4474-8e73-b26b1c262122 .
 
 cssvrsc:3738e9e2-7c7b-49e9-b7f7-a80f7b8948f0 a schema:ContactPoint,
         owl:NamedIndividual ;
@@ -1336,20 +1310,58 @@ cssvrsc:59aee717-0099-42b0-972e-05f334d7ea97 a owl:NamedIndividual,
         dcat:Distribution ;
     dcat:accessURL "https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/akn4eu"^^xsd:anyURI .
 
-cssvrsc:f845180f611ff9304418ca261e8cd61abdc282f0a3cf891f96094a51a83065ce a cssv:Specification,
-        owl:NamedIndividual ;
-    cssv:isMaintainedBy cssvrsc:ae678f758b202e4b7c0d51efbf969a84567e57de519e0f2f58a658028b47756a ;
-    dct:title "Core Public Service Vocabulary Application Profile (CPSV-AP)"@en ;
-    dcat:distribution cssvrsc:c511d561-3c88-4872-8359-cde825fa0f28 .
-
 cssvrsc:a61e46d2918487a44fe12b59273afd2fd4326225041c92534ed339c600fc12ac a cssv:Specification,
         owl:NamedIndividual ;
     cssv:isMaintainedBy cssvrsc:ae678f758b202e4b7c0d51efbf969a84567e57de519e0f2f58a658028b47756a ;
     dct:title "Core Criterion and Core Evidence Vocabulary (CCCEV)"@en ;
     dcat:distribution cssvrsc:c6b549be-7b5e-4971-9a6a-ad9298bd1a2a .
 
-cssvrsc:e4940944a20f90dcd28ec5ccaa3bbd3cb74c15004568cc32968faeb0819a69a2 a cssv:Specification,
+cssvrsc:250a2567c0af286f50ca3eecc071fe4258191c1270dbea6b82b557d74c0aaa7c a cssv:Specification,
+        owl:NamedIndividual ;
+    cssv:isMaintainedBy cssvrsc:6dc87bf3ac7649b799be35cdd8b3a0bdae66a0447c69c286e01df5c87c589859 ;
+    dct:title "ISO/IEC 19944-1:2020 - Cloud computing and distributed platforms ─ Data flow, data categories and data use — Part 1: Fundamentals"@en ;
+    dcat:distribution cssvrsc:c127b1be-a974-4939-82bf-1247b2c6588b .
+
+cssvrsc:c127b1be-a974-4939-82bf-1247b2c6588b a owl:NamedIndividual,
+        dcat:Distribution ;
+    dcat:accessURL "https://www.iso.org/standard/79573.html"^^xsd:anyURI .
+
+cssvrsc:0e12967520ef4b68bb5fb857177827c0094abca637175e68a0a09bd24130694c a cssv:Family,
         owl:NamedIndividual ;
     cssv:isMaintainedBy cssvrsc:f45f6c8ef56563dd5fe289d6817c3a398df2a29fc9fad70d5114d6a5a1fa3815 ;
-    dct:title "Asset Description Metadata Schema (ADMS)"@en ;
-    dcat:distribution cssvrsc:7a6694ed-5916-43e2-98c8-66896b859507 .
+    dct:title "PROV Family"@en ;
+    dcat:distribution cssvrsc:adaec688-a18d-4483-ad4f-3f52c5903778 .
+
+cssvrsc:adaec688-a18d-4483-ad4f-3f52c5903778 a owl:NamedIndividual,
+        dcat:Distribution ;
+    dcat:accessURL "https://www.w3.org/TR/prov-overview/"^^xsd:anyURI .
+
+cssvrsc:8eb93f554a3440a30b522cf4f0f9f6800045bf0b2741c518fab12bac16ca84c6 a cssv:Specification,
+        owl:NamedIndividual ;
+    cssv:isMaintainedBy cssvrsc:4c29de14a9cf50ef38f64ea1933e2c5889b23e0a68a6b7259c334b0d00c0082d ;
+    dct:title "E-ARK Common Specification for Information Packages (CSIP)"@en ;
+    dcat:distribution cssvrsc:910fcd0a-843c-4626-8b94-6b89448f3756 .
+
+cssvrsc:910fcd0a-843c-4626-8b94-6b89448f3756 a owl:NamedIndividual,
+        dcat:Distribution ;
+    dcat:accessURL "https://earkcsip.dilcis.eu/"^^xsd:anyURI .
+
+cssvrsc:033dafda5c5df120422d0fd6f3a29851d949b1691158dff60512c684086fb121 a cssv:Specification,
+        owl:NamedIndividual ;
+    cssv:isMaintainedBy cssvrsc:888cf0b93c3579f6c2782f5252e66631753f4654323c600c5df8c573d796c37b ;
+    dct:title "Internet Calendaring and Scheduling Core Object Specification (iCalendar)"@en ;
+    dcat:distribution cssvrsc:43082766-0613-4ca8-8b1d-3668518c388a .
+
+cssvrsc:43082766-0613-4ca8-8b1d-3668518c388a a owl:NamedIndividual,
+        dcat:Distribution ;
+    dcat:accessURL "https://datatracker.ietf.org/doc/html/rfc5545"^^xsd:anyURI .
+
+cssvrsc:236d9aa59c4ca31ca8b1c54328812d8ab09496916c7ca622b70446b1b1a660a0 a cssv:Specification,
+        owl:NamedIndividual ;
+    cssv:isMaintainedBy cssvrsc:4c29de14a9cf50ef38f64ea1933e2c5889b23e0a68a6b7259c334b0d00c0082d ;
+    dct:title "eDelivery Access Point (AP) Domibus"@en ;
+    dcat:distribution cssvrsc:2384fd77-6997-4032-a981-a91ede7d9efb .
+
+cssvrsc:2384fd77-6997-4032-a981-a91ede7d9efb a owl:NamedIndividual,
+        dcat:Distribution ;
+    dcat:accessURL "https://ec.europa.eu/digital-building-blocks/wikis/display/DIGITAL/Domibus"^^xsd:anyURI .
