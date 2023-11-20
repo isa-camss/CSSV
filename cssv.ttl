@@ -28,7 +28,7 @@
                                                                   rdfs:seeAlso <https://github.com/isa-camss/CSSV> ,
                                                                                <https://joinup.ec.europa.eu/collection/common-assessment-method-standards-and-specifications-camss/solution/core-standards-and-specifications-vocabulary-cssv> ,
                                                                                <https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/e-government-core-vocabularies/core-standards-and-specifications-vocabulary> ;
-                                                                  owl:versionInfo """Core Standards and Specifications Vocabulary 1.2.0""" .
+                                                                  owl:versionInfo "1.2.0" .
 
 #################################################################
 #    Object Properties
