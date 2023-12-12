@@ -1,4 +1,4 @@
-@prefix cssv: <https://data.europa.eu2sa/cssv#> .
+@prefix cssv: <http://data.europa.eu/2sa/cssv#> .
 @prefix cc: <http://creativecommons.org/ns#> .
 @prefix dc: <http://www.omg.org/spec/UML/20131001/UMLDC> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
@@ -14,9 +14,9 @@
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix sch: <https://schema.org/> .
 @prefix prof: <https://www.w3.org/TR/dx-prof/#> .
-@base <https://data.europa.eu2sa/cssv> .
+@base <http://data.europa.eu/2sa/cssv> .
 
-<https://data.europa.eu2sa/cssv> rdf:type owl:Ontology ;
+<http://data.europa.eu/2sa/cssv#> rdf:type owl:Ontology ;
                                                                   owl:versionIRI cssv:CSSV.ttl ;													  
                                                                   cc:attributionName "European Commission - ISA2, CAMSS Team" ;
                                                                   dct:date "2022-03-31"^^xsd:date ;
