@@ -1,0 +1,392 @@
+<http://data.europa.eu2sa/cssv#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://data.europa.eu2sa/cssv#> <http://www.w3.org/2002/07/owl#versionIRI> <http://data.europa.eu2sa/cssv#> .
+<http://data.europa.eu2sa/cssv#> <http://creativecommons.org/ns#attributionName> "European Commission" .
+<http://data.europa.eu2sa/cssv#> <http://purl.org/dc/terms/date> "2024-11-29" .
+<http://data.europa.eu2sa/cssv#> <http://purl.org/dc/terms/mediator> _:genid1 .
+_:genid1 <http://xmlns.com/foaf/0.1/name> "Common Assessment Method for Standards and Specifications (CAMSS)" .
+_:genid1 <http://xmlns.com/foaf/0.1/homepage> "https://interoperable-europe.ec.europa.eu/collection/common-assessment-method-standards-and-specifications-camss" .
+<http://data.europa.eu2sa/cssv#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "cssv" .
+<http://data.europa.eu2sa/cssv#> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://data.europa.eu2sa/cssv#" .
+<http://data.europa.eu2sa/cssv#> <http://www.w3.org/2000/01/rdf-schema#label> "Core Standards and Specifications Vocabulary" .
+<http://data.europa.eu2sa/cssv#> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://github.com/isa-camss/CSSV> .
+<http://data.europa.eu2sa/cssv#> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://joinup.ec.europa.eu/collection/common-assessment-method-standards-and-specifications-camss/solution/core-standards-and-specifications-vocabulary-cssv> .
+<http://data.europa.eu2sa/cssv#> <http://www.w3.org/2002/07/owl#versionInfo> "1.4.0" .
+<http://data.europa.eu2sa/cssv#> <http://www.w3.org/2004/02/skos/core#note> "This file has been generated with Protégé." .
+<http://data.europa.eu2sa/cssv#> <http://xmlns.com/foaf/0.1/maker> _:genid2 .
+_:genid2 <http://xmlns.com/foaf/0.1/firstName> "Common Assessment Method for Standards and Specifications (CAMSS)" .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://creativecommons.org/ns#attributionName
+<http://creativecommons.org/ns#attributionName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/date
+<http://purl.org/dc/terms/date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/mediator
+<http://purl.org/dc/terms/mediator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#altLabel
+<http://www.w3.org/2004/02/skos/core#altLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#label
+<http://www.w3.org/2004/02/skos/core#label> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#note
+<http://www.w3.org/2004/02/skos/core#note> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#prefLabel
+<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/firstName
+<http://xmlns.com/foaf/0.1/firstName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/homepage
+<http://xmlns.com/foaf/0.1/homepage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/maker
+<http://xmlns.com/foaf/0.1/maker> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/name
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2000/01/rdf-schema#Literal
+<http://www.w3.org/2000/01/rdf-schema#Literal> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> .
+<http://www.w3.org/2000/01/rdf-schema#Literal> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.w3.org/2001/XMLSchema#date> .
+<http://www.w3.org/2000/01/rdf-schema#Literal> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.w3.org/2000/01/rdf-schema#Literal> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.w3.org/2000/01/rdf-schema#Literal> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.w3.org/2001/XMLSchema#int> .
+<http://www.w3.org/2000/01/rdf-schema#Literal> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://www.w3.org/2004/02/skos/core#Concept
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://data.europa.eu2sa/cssv#combinedIn
+<http://data.europa.eu2sa/cssv#combinedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.europa.eu2sa/cssv#combinedIn> <http://www.w3.org/2002/07/owl#inverseOf> <http://data.europa.eu2sa/cssv#combines> .
+<http://data.europa.eu2sa/cssv#combinedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu2sa/cssv#Specification> .
+<http://data.europa.eu2sa/cssv#combinedIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu2sa/cssv#Family> .
+<http://data.europa.eu2sa/cssv#combinedIn> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/w21/e1f84ab1-bad6-4e95-b37a-e54ba7dfc551> .
+<http://data.europa.eu2sa/cssv#combinedIn> <http://www.w3.org/2004/02/skos/core#definition> "A set of Specifications that are complementary and interrelated, forming a Family of Specifications."@en .
+<http://data.europa.eu2sa/cssv#combinedIn> <http://www.w3.org/2004/02/skos/core#prefLabel> "Combined in"@en .
+# 
+# http://data.europa.eu2sa/cssv#combines
+<http://data.europa.eu2sa/cssv#combines> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.europa.eu2sa/cssv#combines> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu2sa/cssv#Family> .
+<http://data.europa.eu2sa/cssv#combines> <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu2sa/cssv#Specification> .
+<http://data.europa.eu2sa/cssv#combines> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/w21/e1f84ab1-bad6-4e95-b37a-e54ba7dfc551> .
+<http://data.europa.eu2sa/cssv#combines> <http://www.w3.org/2004/02/skos/core#definition> "Whether a Family is a union of more than one Specifications."@en .
+<http://data.europa.eu2sa/cssv#combines> <http://www.w3.org/2004/02/skos/core#prefLabel> "Combines"@en .
+# 
+# http://data.europa.eu2sa/cssv#configuredIn
+<http://data.europa.eu2sa/cssv#configuredIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.europa.eu2sa/cssv#configuredIn> <http://www.w3.org/2002/07/owl#inverseOf> <http://data.europa.eu2sa/cssv#configures> .
+<http://data.europa.eu2sa/cssv#configuredIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu2sa/cssv#Specification> .
+<http://data.europa.eu2sa/cssv#configuredIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu2sa/cssv#ApplicationProfile> .
+<http://data.europa.eu2sa/cssv#configuredIn> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/w21/e1f84ab1-bad6-4e95-b37a-e54ba7dfc551> .
+<http://data.europa.eu2sa/cssv#configuredIn> <http://www.w3.org/2004/02/skos/core#definition> "A set of Specifications potentially for a given use case or policy domain that are aggregated in an ApplicationProfile."@en .
+<http://data.europa.eu2sa/cssv#configuredIn> <http://www.w3.org/2004/02/skos/core#prefLabel> "Configured in"@en .
+# 
+# http://data.europa.eu2sa/cssv#configures
+<http://data.europa.eu2sa/cssv#configures> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.europa.eu2sa/cssv#configures> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu2sa/cssv#ApplicationProfile> .
+<http://data.europa.eu2sa/cssv#configures> <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu2sa/cssv#Specification> .
+<http://data.europa.eu2sa/cssv#configures> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/w21/e1f84ab1-bad6-4e95-b37a-e54ba7dfc551> .
+<http://data.europa.eu2sa/cssv#configures> <http://www.w3.org/2004/02/skos/core#definition> "Whether an Application Profile design or adapts a Specification for a specific purpose."@en .
+<http://data.europa.eu2sa/cssv#configures> <http://www.w3.org/2004/02/skos/core#prefLabel> "Configures"@en .
+# 
+# http://data.europa.eu2sa/cssv#isAspectOf
+<http://data.europa.eu2sa/cssv#isAspectOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.europa.eu2sa/cssv#isAspectOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu2sa/cssv#ApplicationProfile> .
+<http://data.europa.eu2sa/cssv#isAspectOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://www.w3.org/TR/dx-prof/#Profile> .
+<https://www.w3.org/TR/dx-prof/#Profile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.europa.eu2sa/cssv#isAspectOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/w21/e1f84ab1-bad6-4e95-b37a-e54ba7dfc551> .
+<http://data.europa.eu2sa/cssv#isAspectOf> <http://www.w3.org/2004/02/skos/core#definition> "ApplicationProfile is a part of a Profile."@en .
+<http://data.europa.eu2sa/cssv#isAspectOf> <http://www.w3.org/2004/02/skos/core#prefLabel> "Is aspect of"@en .
+# 
+# http://data.europa.eu2sa/cssv#isMaintainedBy
+<http://data.europa.eu2sa/cssv#isMaintainedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.europa.eu2sa/cssv#isMaintainedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu2sa/cssv#Specification> .
+<http://data.europa.eu2sa/cssv#isMaintainedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://xmlns.com/foaf/0.1/Agent> .
+<http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.europa.eu2sa/cssv#isMaintainedBy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/w21/e1f84ab1-bad6-4e95-b37a-e54ba7dfc551> .
+<http://data.europa.eu2sa/cssv#isMaintainedBy> <http://www.w3.org/2004/02/skos/core#definition> "The Person, Organisation reponsible to update and maintain the specification."@en .
+<http://data.europa.eu2sa/cssv#isMaintainedBy> <http://www.w3.org/2004/02/skos/core#prefLabel> "Is maintained by"@en .
+# 
+# http://data.europa.eu2sa/cssv#isRecommendedBy
+<http://data.europa.eu2sa/cssv#isRecommendedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.europa.eu2sa/cssv#isRecommendedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu2sa/cssv#Specification> .
+<http://data.europa.eu2sa/cssv#isRecommendedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://xmlns.com/foaf/0.1/Agent> .
+<http://data.europa.eu2sa/cssv#isRecommendedBy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/w21/e1f84ab1-bad6-4e95-b37a-e54ba7dfc551> .
+<http://data.europa.eu2sa/cssv#isRecommendedBy> <http://www.w3.org/2000/01/rdf-schema#label> "Is recommended by" .
+<http://data.europa.eu2sa/cssv#isRecommendedBy> <http://www.w3.org/2004/02/skos/core#definition> "A link to any other person or organisation that recommends the specification." .
+<http://data.europa.eu2sa/cssv#isRecommendedBy> <http://www.w3.org/2004/02/skos/core#prefLabel> "Is recommended by" .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/dc/terms/creator> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/dcat#Resource> .
+<http://www.w3.org/ns/dcat#Resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/dc/terms/creator> <http://www.w3.org/2000/01/rdf-schema#range> <http://xmlns.com/foaf/0.1/Agent> .
+<http://purl.org/dc/terms/creator> <http://www.w3.org/2000/01/rdf-schema#label> "Creator"@en .
+<http://purl.org/dc/terms/creator> <http://www.w3.org/2004/02/skos/core#definition> "An entity primarily responsible for making the resource."@en .
+# 
+# http://www.w3.org/ns/dcat#distribution
+<http://www.w3.org/ns/dcat#distribution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/dcat#distribution> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/dcat#Dataset> .
+<http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/dcat#distribution> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/dcat#Distribution> .
+<http://www.w3.org/ns/dcat#Distribution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/dcat#distribution> <http://www.w3.org/2004/02/skos/core#definition> "An available distribution of the dataset."@en .
+<http://www.w3.org/ns/dcat#distribution> <http://www.w3.org/2004/02/skos/core#label> "Distribution"@en .
+# 
+# http://www.w3.org/ns/dcat#previousVersion
+<http://www.w3.org/ns/dcat#previousVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/dcat#previousVersion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu2sa/cssv#Specification> .
+<http://www.w3.org/ns/dcat#previousVersion> <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu2sa/cssv#Specification> .
+<http://www.w3.org/ns/dcat#previousVersion> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://www.w3.org/ns/dcat#> .
+<http://www.w3.org/ns/dcat#previousVersion> <http://www.w3.org/2000/01/rdf-schema#label> "Previous version"@en .
+<http://www.w3.org/ns/dcat#previousVersion> <http://www.w3.org/2004/02/skos/core#definition> "The previous version of a resource in a lineage."@en .
+<http://www.w3.org/ns/dcat#previousVersion> <http://www.w3.org/2004/02/skos/core#prefLabel> "Previous version"@en .
+# 
+# http://www.w3.org/ns/dcat#theme
+<http://www.w3.org/ns/dcat#theme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/dcat#theme> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/dcat#Resource> .
+# 
+# https://schema.org/contactPoint
+<https://schema.org/contactPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://schema.org/contactPoint> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/ContactPoint> .
+<https://schema.org/ContactPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://schema.org/contactPoint> <http://www.w3.org/2000/01/rdf-schema#range> <http://xmlns.com/foaf/0.1/Agent> .
+<https://schema.org/contactPoint> <http://www.w3.org/2000/01/rdf-schema#label> "Contact point"@en .
+<https://schema.org/contactPoint> <http://www.w3.org/2004/02/skos/core#definition> "A contact point for a person or organisation."@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://data.europa.eu2sa/cssv#acronym
+<http://data.europa.eu2sa/cssv#acronym> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://data.europa.eu2sa/cssv#acronym> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu2sa/cssv#Specification> .
+<http://data.europa.eu2sa/cssv#acronym> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://data.europa.eu2sa/cssv#acronym> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu2sa/cssv#> .
+<http://data.europa.eu2sa/cssv#acronym> <http://www.w3.org/2004/02/skos/core#altLabel> "Has acronym"@en .
+<http://data.europa.eu2sa/cssv#acronym> <http://www.w3.org/2004/02/skos/core#definition> "Abbreviation of the specification."@en .
+<http://data.europa.eu2sa/cssv#acronym> <http://www.w3.org/2004/02/skos/core#prefLabel> "Acronym"@en .
+# 
+# http://data.europa.eu2sa/cssv#alternative
+<http://data.europa.eu2sa/cssv#alternative> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://data.europa.eu2sa/cssv#alternative> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu2sa/cssv#Specification> .
+<http://data.europa.eu2sa/cssv#alternative> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://data.europa.eu2sa/cssv#alternative> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu2sa/cssv#> .
+<http://data.europa.eu2sa/cssv#alternative> <http://www.w3.org/2004/02/skos/core#definition> "The alternative name of the specification."@en .
+<http://data.europa.eu2sa/cssv#alternative> <http://www.w3.org/2004/02/skos/core#prefLabel> "Alternative"@en .
+# 
+# http://purl.org/dc/terms/accessRights
+<http://purl.org/dc/terms/accessRights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/dc/terms/accessRights> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/dcat#Resource> .
+<http://purl.org/dc/terms/accessRights> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://purl.org/dc/terms/accessRights> <http://www.w3.org/2000/01/rdf-schema#label> "Access rights"@en .
+<http://purl.org/dc/terms/accessRights> <http://www.w3.org/2004/02/skos/core#definition> "A rights statement that concerns how the distribution is accessed."@en .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/dc/terms/description> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu2sa/cssv#Specification> .
+<http://purl.org/dc/terms/description> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://purl.org/dc/terms/description> <http://www.w3.org/2004/02/skos/core#definition> "Brief description of the resource."@en .
+<http://purl.org/dc/terms/description> <http://www.w3.org/2004/02/skos/core#label> "Description"@en .
+# 
+# http://purl.org/dc/terms/identifier
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu2sa/cssv#Specification> .
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/2004/02/skos/core#definition> "A unique identifier of the resource being described or cataloged."@en .
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/2004/02/skos/core#label> "Identifier"@en .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/dc/terms/license> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/dcat#Resource> .
+<http://purl.org/dc/terms/license> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://purl.org/dc/terms/license> <http://www.w3.org/2004/02/skos/core#definition> "A legal document under which the resource is made available."@en .
+<http://purl.org/dc/terms/license> <http://www.w3.org/2004/02/skos/core#label> "License"@en .
+# 
+# http://purl.org/dc/terms/rights
+<http://purl.org/dc/terms/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/dc/terms/rights> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/dcat#Resource> .
+<http://purl.org/dc/terms/rights> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://purl.org/dc/terms/rights> <http://www.w3.org/2004/02/skos/core#definition> "Information about rights held in and over the distribution."@en .
+<http://purl.org/dc/terms/rights> <http://www.w3.org/2004/02/skos/core#label> "Rights"@en .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/dc/terms/title> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu2sa/cssv#Specification> .
+<http://purl.org/dc/terms/title> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://purl.org/dc/terms/title> <http://www.w3.org/2004/02/skos/core#definition> "A name given to the Specification."@en .
+<http://purl.org/dc/terms/title> <http://www.w3.org/2004/02/skos/core#label> "Title"@en .
+# 
+# http://purl.org/dc/terms/type
+<http://purl.org/dc/terms/type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/dc/terms/type> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu2sa/cssv#Specification> .
+<http://purl.org/dc/terms/type> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://purl.org/dc/terms/type> <http://www.w3.org/2000/01/rdf-schema#label> "Type"@en .
+<http://purl.org/dc/terms/type> <http://www.w3.org/2004/02/skos/core#definition> "The nature or genre of the resource."@en .
+# 
+# http://www.w3.org/ns/dcat#accessURL
+<http://www.w3.org/ns/dcat#accessURL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/ns/dcat#accessURL> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/dcat#Distribution> .
+<http://www.w3.org/ns/dcat#accessURL> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://www.w3.org/ns/dcat#accessURL> <http://www.w3.org/2000/01/rdf-schema#label> "Access URL"@en .
+<http://www.w3.org/ns/dcat#accessURL> <http://www.w3.org/2004/02/skos/core#definition> "A URL of the resource that gives access to a distribution of the dataset."@en .
+# 
+# http://www.w3.org/ns/dcat#downloadURL
+<http://www.w3.org/ns/dcat#downloadURL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/ns/dcat#downloadURL> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/dcat#Distribution> .
+<http://www.w3.org/ns/dcat#downloadURL> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://www.w3.org/ns/dcat#downloadURL> <http://www.w3.org/2000/01/rdf-schema#label> "Download URL"@en .
+<http://www.w3.org/ns/dcat#downloadURL> <http://www.w3.org/2004/02/skos/core#definition> "The URL of the downloadable file in a given format."@en .
+# 
+# http://www.w3.org/ns/dcat#theme
+<http://www.w3.org/ns/dcat#theme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/ns/dcat#theme> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
+# 
+# http://www.w3.org/ns/dcat#version
+<http://www.w3.org/ns/dcat#version> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/ns/dcat#version> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu2sa/cssv#Specification> .
+<http://www.w3.org/ns/dcat#version> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://www.w3.org/ns/dcat#version> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/dcat#> .
+<http://www.w3.org/ns/dcat#version> <http://www.w3.org/2000/01/rdf-schema#label> "Version"@en .
+<http://www.w3.org/ns/dcat#version> <http://www.w3.org/2004/02/skos/core#definition> "The version indicator (name or identifier) of a resource."@en .
+<http://www.w3.org/ns/dcat#version> <http://www.w3.org/2004/02/skos/core#prefLabel> "Version"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://data.europa.eu2sa/cssv#ApplicationProfile
+<http://data.europa.eu2sa/cssv#ApplicationProfile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.europa.eu2sa/cssv#ApplicationProfile> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.europa.eu2sa/cssv#Specification> .
+<http://data.europa.eu2sa/cssv#ApplicationProfile> <http://www.w3.org/2002/07/owl#disjointWith> <http://data.europa.eu2sa/cssv#Family> .
+<http://data.europa.eu2sa/cssv#ApplicationProfile> <http://www.w3.org/2002/07/owl#disjointWith> <http://data.europa.eu2sa/cssv#Standard> .
+<http://data.europa.eu2sa/cssv#ApplicationProfile> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/w21/e1f84ab1-bad6-4e95-b37a-e54ba7dfc551> .
+<http://data.europa.eu2sa/cssv#ApplicationProfile> <http://www.w3.org/2004/02/skos/core#definition> "An application profile “customises one or more existing specifications potentially for a given use case or a policy domain adding an end to end narrative describing and ensuring the interoperability of its underlying specification(s)”."@en .
+<http://data.europa.eu2sa/cssv#ApplicationProfile> <http://www.w3.org/2004/02/skos/core#prefLabel> "Application Profile"@en .
+# 
+# http://data.europa.eu2sa/cssv#Family
+<http://data.europa.eu2sa/cssv#Family> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.europa.eu2sa/cssv#Family> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.europa.eu2sa/cssv#Specification> .
+<http://data.europa.eu2sa/cssv#Family> <http://www.w3.org/2002/07/owl#disjointWith> <http://data.europa.eu2sa/cssv#Standard> .
+<http://data.europa.eu2sa/cssv#Family> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/w21/e1f84ab1-bad6-4e95-b37a-e54ba7dfc551> .
+<http://data.europa.eu2sa/cssv#Family> <http://www.w3.org/2004/02/skos/core#definition> "A collection of interrelated and/or complementary specifications, standards or application profiles and the explanation of how they are combined, used or both."@en .
+<http://data.europa.eu2sa/cssv#Family> <http://www.w3.org/2004/02/skos/core#prefLabel> "Family"@en .
+# 
+# http://data.europa.eu2sa/cssv#Specification
+<http://data.europa.eu2sa/cssv#Specification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.europa.eu2sa/cssv#Specification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/dcat#Dataset> .
+<http://data.europa.eu2sa/cssv#Specification> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/w21/e1f84ab1-bad6-4e95-b37a-e54ba7dfc551> .
+<http://data.europa.eu2sa/cssv#Specification> <http://www.w3.org/2004/02/skos/core#definition> "Document with normative guidelines or characteristics that can be used consistently to ensure that materials, products, processes and services conform to one or a set of requirements (ISO). Specifications are the cornerstone of interoperability, as they set the grounds for the design and development of interoperable and reusable solutions based in common services at the lowest level."@en .
+<http://data.europa.eu2sa/cssv#Specification> <http://www.w3.org/2004/02/skos/core#prefLabel> "Specification"@en .
+# 
+# http://data.europa.eu2sa/cssv#Standard
+<http://data.europa.eu2sa/cssv#Standard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.europa.eu2sa/cssv#Standard> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.europa.eu2sa/cssv#Specification> .
+<http://data.europa.eu2sa/cssv#Standard> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/dc/terms/Standard> .
+<http://purl.org/dc/terms/Standard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.europa.eu2sa/cssv#Standard> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/w21/e1f84ab1-bad6-4e95-b37a-e54ba7dfc551> .
+<http://data.europa.eu2sa/cssv#Standard> <http://www.w3.org/2004/02/skos/core#definition> "Specification that has reached a certain maturity and widespread adoption and potentially endorsed."@en .
+<http://data.europa.eu2sa/cssv#Standard> <http://www.w3.org/2004/02/skos/core#prefLabel> "Standard"@en .
+# 
+# http://purl.org/dc/terms/Standard
+# 
+# http://www.w3.org/ns/dcat#Dataset
+# 
+# http://www.w3.org/ns/dcat#Distribution
+# 
+# http://www.w3.org/ns/dcat#Resource
+# 
+# http://xmlns.com/foaf/0.1/Agent
+# 
+# http://xmlns.com/foaf/0.1/Person
+# 
+# https://schema.org/ContactPoint
+# 
+# https://www.w3.org/TR/dx-prof/#Profile
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://data.europa.eu2sa/cssv#
+<http://data.europa.eu2sa/cssv#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://data.europa.eu2sa/cssv#> <http://purl.org/dc/terms/description> "This module provides the definitions for the Core Standards and Specifications Vocabulary."@en .
+<http://data.europa.eu2sa/cssv#> <http://purl.org/dc/terms/title> "Core Standards and Specifications Vocabulary"@en .
+# 
+# http://www.w3.org/2000/01/rdf-schema#Resource
+<http://www.w3.org/2000/01/rdf-schema#Resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3.org/2000/01/rdf-schema#Resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://www.w3.org/2000/01/rdf-schema#Literal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<http://www.w3.org/ns/dcat#theme> <http://www.w3.org/2000/01/rdf-schema#label> "Theme"@en .
+<http://www.w3.org/ns/dcat#theme> <http://www.w3.org/2004/02/skos/core#definition> "A main category of the resource. A resource can have multiple themes."@en .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

@@ -1,0 +1,1228 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="resources/primer.css" media="screen"/>
+<link rel="stylesheet" href="resources/rec.css" media="screen"/>
+<link rel="stylesheet" href="resources/extra.css" media="screen"/>
+<link rel="stylesheet" href="resources/owl.css" media="screen"/>
+<link rel="stylesheet" href="resources/dark.css" media="(prefers-color-scheme: dark)"/>
+<link rel="stylesheet" href="resources/light.css" media="(prefers-color-scheme: light)"/>
+<link rel="stylesheet" href="resources/slider.css" media="screen"/>
+<meta name="color-scheme" content="dark light">
+<script type="module" src="resources/dark-mode-toggle.mjs"></script><div class="darkmode">
+	<dark-mode-toggle class="slider"></dark-mode-toggle>
+</div>
+ <title>Core Standards and Specifications Vocabulary</title>
+
+
+<!-- SCHEMA.ORG METADATA -->
+
+<script src="resources/jquery.js"></script> 
+<script src="resources/marked.min.js"></script> 
+    <script> 
+function loadHash() {
+  jQuery(".markdown").each(function(el){jQuery(this).after(marked.parse(jQuery(this).text())).remove()});
+	var hash = location.hash;
+	if($(hash).offset()!=null){
+	  $('html, body').animate({scrollTop: $(hash).offset().top}, 0);
+}
+	loadTOC();
+}
+function loadTOC(){
+	//process toc dynamically
+	  var t='<h2>Table of contents</h2><ul>';i = 1;j=0;
+	  jQuery(".list").each(function(){
+		if(jQuery(this).is('h2')){
+			if(j>0){
+				t+='</ul>';
+				j=0;
+			}
+			t+= '<li>'+i+'. <a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).ignore("span").text()+'</a></li>';
+			i++;
+		}
+		if(jQuery(this).is('h3')){
+			if(j==0){
+				t+='<ul>';
+			}
+			j++;
+			t+= '<li>'+(i-1)+'.'+j+'. '+'<a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).ignore("span").text()+'</a></li>';
+		}
+	  });
+	  t+='</ul>';
+	  $("#toc").html(t); 
+}
+$(function(){
+    loadHash();
+}); $.fn.ignore = function(sel){
+        return this.clone().find(sel||">*").remove().end();
+ }; 
+   </script> 
+  </head> 
+
+<body>
+<div class="container">
+<div class="head">
+<div style="float:right">language <a href="index-en.html"><b>en</b></a> </div>
+<div style="display: flex; align-items: center; gap: 10px;">
+   <h1 style="margin: 0;">Core Standards and Specifications Vocabulary</h1>
+   <a href="#">
+     <img src="./image/CSSV.png" alt="CSSV Logo" style="width: 100px; height: auto;" />
+   </a>
+ </div>
+<h2>Release: 29/11/2024</h2>
+
+
+<dl>
+<dt>This version:</dt>
+<dd><a href="http://data.europa.eu2sa/cssv#">http://data.europa.eu2sa/cssv#</a></dd>
+<dt>Latest version:</dt>
+<dd><a href="http://data.europa.eu2sa/cssv#">http://data.europa.eu2sa/cssv#</a></dd>
+<dt>Revision:</dt>
+<dd>1.4.0</dd>
+<dt>See also:</dt>
+<dd><a href="https://github.com/isa-camss/CSSV">https://github.com/isa-camss/CSSV</a></dd><dd><a href="https://joinup.ec.europa.eu/collection/common-assessment-method-standards-and-specifications-camss/solution/core-standards-and-specifications-vocabulary-cssv">https://joinup.ec.europa.eu/collection/common-assessment-method-standards-and-specifications-camss/solution/core-standards-and-specifications-vocabulary-cssv</a></dd>
+
+<dt>Download serialization:</dt><dd><span><a href="ontology.jsonld" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.owl" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License:</dt><dd><a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank"><img src="https://img.shields.io/badge/License-Creative%20Commons%204.0-blue.svg" alt="http://creativecommons.org/licenses/by-sa/4.0/" /></a>
+</dd>
+<!-- <dt>Evaluation:</dt><dd><a href="OOPSevaluation/oopsEval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd> --><dt>Cite as:</dt>
+<dd> Core Standards and Specifications Vocabulary. Revision: 1.4.0. Retrieved from: http://data.europa.eu2sa/cssv#</dd>
+</dl>
+
+<hr/>
+</div>
+<div class="status">
+<div>
+<span>CSSV 1.4.0</span>
+</div>
+</div>     <div id="abstract"><h2>Abstract</h2><span class="markdown">
+   CSSV is a vocabulary describing standards and specifications used in software development. It is used by ELIS, the EIRA Library of Interoperability Specifications. It is an European Commission solution.</span>
+</div>
+<div id="toc"></div> 
+
+<!--INTRODUCTION SECTION-->
+    <div id="introduction"><h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+      <p>
+         The CSSV is the vocabulary used for the information exchange related to standards and specifications amongst software solutions. It is also the key element for the development and maintenance of the EIRA Library of Interoperability Specifications (ELIS). The CSSV addresses semantic interoperability by reusing existing generic ontologies and vocabularies. This way, the semantics of common concepts and properties are agreed without having to re-discuss them. When concepts or properties have not been identified nor defined for the purposes pursued, they must be proposed either as extensions or from scratch.
+       </p>
+       
+       <p>
+         The methodological approach followed for the development of the CAV reuses the following ontologies and vocabularies:
+       </p>
+       <ul>
+         <li>Data Catalogue Vocabulary (DCAT)</li>
+         <li>Friend of a Friend (FOAF)</li>
+         <li>The Organization Ontology</li>
+         <li>DCMI Metadata Terms (DCTerms)</li>
+         <li>The Profiles Vocabulary (PROF)</li>
+         <li>Schema</li>
+       </ul>
+       
+       
+<div id="namespacedeclarations">
+<h3 id="ns" class="list">Namespace declarations</h3>
+<div id="ns" align="center">
+<table>
+<caption> <a href="#ns"> Table 1</a>: Namespaces used in the document </caption>
+<tbody>
+<tr><td><b>cc</b></td><td>&lt;http://creativecommons.org/ns#&gt;</td></tr>
+<tr><td><b>cssv</b></td><td>&lt;http://data.europa.eu2sa/cssv#&gt;</td></tr>
+<tr><td><b>dc</b></td><td>&lt;http://www.omg.org/spec/UML/20131001/UMLDC&gt;</td></tr>
+<tr><td><b>dcat</b></td><td>&lt;http://www.w3.org/ns/dcat#&gt;</td></tr>
+<tr><td><b>dct</b></td><td>&lt;http://purl.org/dc/terms/&gt;</td></tr>
+<tr><td><b>foaf</b></td><td>&lt;http://xmlns.com/foaf/0.1/&gt;</td></tr>
+<tr><td><b>org</b></td><td>&lt;http://www.w3.org/ns/org#&gt;</td></tr>
+<tr><td><b>owl</b></td><td>&lt;http://www.w3.org/2002/07/owl#&gt;</td></tr>
+<tr><td><b>pav</b></td><td>&lt;http://purl.org/pav/&gt;</td></tr>
+<tr><td><b>prof</b></td><td>&lt;https://www.w3.org/TR/dx-prof/#&gt;</td></tr>
+<tr><td><b>rdf</b></td><td>&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;</td></tr>
+<tr><td><b>rdfs</b></td><td>&lt;http://www.w3.org/2000/01/rdf-schema#&gt;</td></tr>
+<tr><td><b>sch</b></td><td>&lt;https://schema.org/&gt;</td></tr>
+<tr><td><b>skos</b></td><td>&lt;http://www.w3.org/2004/02/skos/core#&gt;</td></tr>
+<tr><td><b>vann</b></td><td>&lt;http://purl.org/vocab/vann/&gt;</td></tr>
+<tr><td><b>xml</b></td><td>&lt;http://www.w3.org/XML/1998/namespace&gt;</td></tr>
+<tr><td><b>xsd</b></td><td>&lt;http://www.w3.org/2001/XMLSchema#&gt;</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+  
+
+<!--OVERVIEW SECTION-->
+    <div id="overview"><h2 id="overv" class="list">Core Standards and Specifications Vocabulary: Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+This ontology has the following classes and properties.</span>
+<div style="text-align: center;">
+   <img src="./image/CSSV_UML_v1.4.0.png" alt="CSSV UML" style="width: 80%; max-width: 1200px; height: auto;" />
+ </div>
+<h4>Classes</h4>
+<ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#ApplicationProfile" title="http://data.europa.eu2sa/cssv#ApplicationProfile">Application Profile</a>
+   </li>
+   <li>
+      <a href="#Family" title="http://data.europa.eu2sa/cssv#Family">Family</a>
+   </li>
+   <li>
+      <a href="#Specification" title="http://data.europa.eu2sa/cssv#Specification">Specification</a>
+   </li>
+   <li>
+      <a href="#Standard" title="http://data.europa.eu2sa/cssv#Standard">Standard</a>
+   </li>
+</ul><h4>Object Properties</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#combinedIn" title="http://data.europa.eu2sa/cssv#combinedIn">Combined in</a>
+   </li>
+   <li>
+      <a href="#combines" title="http://data.europa.eu2sa/cssv#combines">Combines</a>
+   </li>
+   <li>
+      <a href="#configuredIn" title="http://data.europa.eu2sa/cssv#configuredIn">Configured in</a>
+   </li>
+   <li>
+      <a href="#configures" title="http://data.europa.eu2sa/cssv#configures">Configures</a>
+   </li>
+   <li>
+      <a href="#https://schema.org/contactPoint" title="https://schema.org/contactPoint">Contact point</a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/terms/creator" title="http://purl.org/dc/terms/creator">Creator</a>
+   </li>
+   <li>
+      <a href="#http://www.w3.org/ns/dcat#distribution" title="http://www.w3.org/ns/dcat#distribution">
+         <span>distribution</span>
+      </a>
+   </li>
+   <li>
+      <a href="#isAspectOf" title="http://data.europa.eu2sa/cssv#isAspectOf">Is aspect of</a>
+   </li>
+   <li>
+      <a href="#isMaintainedBy" title="http://data.europa.eu2sa/cssv#isMaintainedBy">Is maintained by</a>
+   </li>
+   <li>
+      <a href="#isRecommendedBy" title="http://data.europa.eu2sa/cssv#isRecommendedBy">Is recommended by</a>
+   </li>
+   <li>
+      <a href="#http://www.w3.org/ns/dcat#previousVersion" title="http://www.w3.org/ns/dcat#previousVersion">Previous version</a>
+   </li>
+   <li>
+      <a href="#http://www.w3.org/ns/dcat#theme" title="http://www.w3.org/ns/dcat#theme">
+         <span>Theme</span>
+      </a>
+   </li>
+</ul><h4>Data Properties</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#http://purl.org/dc/terms/accessRights" title="http://purl.org/dc/terms/accessRights">Access rights</a>
+   </li>
+   <li>
+      <a href="#http://www.w3.org/ns/dcat#accessURL" title="http://www.w3.org/ns/dcat#accessURL">Access URL</a>
+   </li>
+   <li>
+      <a href="#acronym" title="http://data.europa.eu2sa/cssv#acronym">Acronym</a>
+   </li>
+   <li>
+      <a href="#alternative" title="http://data.europa.eu2sa/cssv#alternative">Alternative</a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/terms/description" title="http://purl.org/dc/terms/description">
+         <span>description</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://www.w3.org/ns/dcat#downloadURL" title="http://www.w3.org/ns/dcat#downloadURL">Download URL</a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/terms/identifier" title="http://purl.org/dc/terms/identifier">
+         <span>identifier</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/terms/license" title="http://purl.org/dc/terms/license">
+         <span>license</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/terms/rights" title="http://purl.org/dc/terms/rights">
+         <span>rights</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://www.w3.org/ns/dcat#theme" title="http://www.w3.org/ns/dcat#theme">
+         <span>Theme</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/terms/title" title="http://purl.org/dc/terms/title">
+         <span>title</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/terms/type" title="http://purl.org/dc/terms/type">Type</a>
+   </li>
+   <li>
+      <a href="#http://www.w3.org/ns/dcat#version" title="http://www.w3.org/ns/dcat#version">Version</a>
+   </li>
+</ul>
+</div>
+  
+
+<!--DESCRIPTION SECTION-->
+    <div id="description"><h2 id="desc" class="list">Core Standards and Specifications Vocabulary: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+
+      <p>
+         The main class of the CSSV model is the “Specification”. A conceptual approach to define Specification is by aligning with the one undertaken by Joinup.
+       </p>
+       
+       <p>
+         As represented in the conceptual model of the CSSV, a Specification is an asset, since it inherits from the <code>dcat:Dataset</code>, which inherits from the <code>dcat:Resource</code>. A Specification, besides a document, can be a Standard, an Application Profile, and/or a Family or a collection of other specifications. The CSSV model defines:
+       </p>
+       
+       <ul>
+         <li><strong>Specification</strong>, which describes a document with normative guidelines or characteristics that can be used consistently to ensure that materials, products, processes and services conform to one or a set of requirements (ISO). Specifications are the cornerstone of interoperability, as they set the grounds for the design and development of interoperable and reusable solutions based in common services at the lowest level.</li>
+         <li><strong>A Standard</strong> as a specification that has reached a certain maturity and widespread adoption and potentially endorsed, meaning that it is recognized and supported by a community or sanctioned by an authority.</li>
+         <li><strong>An Application Profile</strong> as customization of one or more existing specifications potentially for a given use case or a policy domain adding an end-to-end narrative describing and ensuring the interoperability of its underlying specification(s). By customization, we understand the “addition of more specificity by identifying mandatory, recommended, and optional elements, as well as by defining controlled vocabularies to be employed”.</li>
+         <li><strong>A Family</strong> as a collection of interrelated and/or complementary specifications, standards, or application profiles and the explanation of how they are combined, used, or both.</li>
+       </ul>
+       
+       <p>
+         A collection of Specifications differs from a Family of Specifications in the fact that the relationship amongst themselves is not explicit. In the CSSV model, a collection of Specifications is an Asset that is related to other Assets and that is realized as an individual of a Specification. In other words, a Specification that reuses the <code>dct:relation</code> property of its base class <code>dcat:Resource</code>.
+       </p>
+       
+       <p>
+         There are occasions where collections of Specifications are applied to a context or a domain in a specific “configuration”. Thus, application profiles may conform sets of “themed” specifications. For this, the CSSV model uses the property “<code>configures/includedIn</code>” and the <code>dcat:theme</code> property pointing at a <code>skos:Concept</code> (i.e. a code, see the DCAT model above).
+       </p>
+       
+       <p>
+         It is important to note that the descendants of the specifications are all “disjoint”. Thus, Application Profiles and Families are Specifications that refer to or put together with other Specifications and/or Standards, but cannot themselves be considered Standards.
+       </p>
+       
+       <p>
+         One Specification, in time, may become a Standard. In these cases, the authority (author) that defined the Specification may be different from the one that creates and maintains artifacts out of the Standard. Think, for example, of the artifacts produced, maintained, and distributed by the Publications Office of the European Union (OP) in its site EU Vocabularies: all these artifacts are defined by other authorities (e.g. the ISO), whilst the artifacts (e.g. the controlled vocabularies expressed in SKOS, XML, GeneriCode, XML, etc.) are supplied by the OP. For this, the CSSV uses the properties <code>dct:creator</code> and <code>cssv:isMaintainedBy</code>. Additionally, the <code>dcat:Dataset</code> has the property <code>dct:type</code> that can be used to state that the Specification is of type “definition, artifact, or other”. The DCAT vocabulary also provides the possibility of expressing who is responsible for the publication of the definition or the artifacts via the property <code>dct:publisher</code> (see the DCAT model).
+       </p>
+       
+       <p>
+         The maintainer or publisher of a Specification is a <code>foaf:Agent</code>, which allows great flexibility to the CSSV model as <code>foaf:Agent</code> is the base class in many ontologies. Moreover, a <code>foaf:Agent</code> may represent a member state that recommends the Specification; the property <code>cssv:isRecommendedBy</code> is introduced for this end. The CSSV puts forward the reuse of the Core Person Vocabulary (ISA2 CPV) and the Organization Ontology (W3C Org) for this purpose. Also, the <code>foaf:Agent</code> provides the contact point of the specification.
+       </p>
+       
+       <p>
+         Concerning the Intellectual Property Rights, they are covered by the fact that a specification, which is a <code>dcat:Resource</code>, allows defining the <code>dct:license</code> and <code>dct:rights</code>.
+       </p>
+       
+       <p>
+         Finally, note that all the descendants of the <code>ccsv:Specification</code> are disjoint. This entails that an individual of an application profile or family cannot be a standard, but does not preclude that, in time, the application profile or the family can become standards. If that were the case, then individuals of <code>ccsv:Standard</code> would be created to represent the standardization of those specifications that are application profiles and families.
+       </p>
+   
+
+<!--CROSSREF SECTION-->
+   <div id="crossref"><h2 id="crossreference" class="list">Cross-reference for Core Standards and Specifications Vocabulary classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by Core Standards and Specifications Vocabulary.
+<div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
+ <h3 id="classes-headline" class="list">Classes</h3>
+ <ul class="hlist">
+  <li><a href="#ApplicationProfile" title="http://data.europa.eu2sa/cssv#ApplicationProfile">Application Profile</a></li>
+  <li><a href="#Family" title="http://data.europa.eu2sa/cssv#Family">Family</a></li>
+  <li><a href="#Specification" title="http://data.europa.eu2sa/cssv#Specification">Specification</a></li>
+  <li><a href="#Standard" title="http://data.europa.eu2sa/cssv#Standard">Standard</a></li>
+ </ul>
+ <div class="entity" id="ApplicationProfile">
+  <h3>Application Profile<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://data.europa.eu2sa/cssv#ApplicationProfile</p>
+  <div class="comment">
+   <span class="markdown">An application profile “customises one or more existing specifications potentially for a given use case or a policy domain adding an end to end narrative describing and ensuring the interoperability of its underlying specification(s)”.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="http://data.europa.eu/w21/e1f84ab1-bad6-4e95-b37a-e54ba7dfc551">http://data.europa.eu/w21/e1f84ab1-bad6-4e95-b37a-e54ba7dfc551</a>
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Specification" title="http://data.europa.eu2sa/cssv#Specification">Specification</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#configures" title="http://data.europa.eu2sa/cssv#configures">Configures</a> <sup class="type-op" title="object property">op</sup>, <a href="#isAspectOf" title="http://data.europa.eu2sa/cssv#isAspectOf">Is aspect of</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#configuredIn" title="http://data.europa.eu2sa/cssv#configuredIn">Configured in</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#Family" title="http://data.europa.eu2sa/cssv#Family">Family</a> <sup class="type-c" title="class">c</sup>, <a href="#Standard" title="http://data.europa.eu2sa/cssv#Standard">Standard</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Family">
+  <h3>Family<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://data.europa.eu2sa/cssv#Family</p>
+  <div class="comment">
+   <span class="markdown">A collection of interrelated and/or complementary specifications, standards or application profiles and the explanation of how they are combined, used or both.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="http://data.europa.eu/w21/e1f84ab1-bad6-4e95-b37a-e54ba7dfc551">http://data.europa.eu/w21/e1f84ab1-bad6-4e95-b37a-e54ba7dfc551</a>
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Specification" title="http://data.europa.eu2sa/cssv#Specification">Specification</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#combines" title="http://data.europa.eu2sa/cssv#combines">Combines</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#combinedIn" title="http://data.europa.eu2sa/cssv#combinedIn">Combined in</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#ApplicationProfile" title="http://data.europa.eu2sa/cssv#ApplicationProfile">Application Profile</a> <sup class="type-c" title="class">c</sup>, <a href="#Standard" title="http://data.europa.eu2sa/cssv#Standard">Standard</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Specification">
+  <h3>Specification<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://data.europa.eu2sa/cssv#Specification</p>
+  <div class="comment">
+   <span class="markdown">Document with normative guidelines or characteristics that can be used consistently to ensure that materials, products, processes and services conform to one or a set of requirements (ISO). Specifications are the cornerstone of interoperability, as they set the grounds for the design and development of interoperable and reusable solutions based in common services at the lowest level.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="http://data.europa.eu/w21/e1f84ab1-bad6-4e95-b37a-e54ba7dfc551">http://data.europa.eu/w21/e1f84ab1-bad6-4e95-b37a-e54ba7dfc551</a>
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/dcat#Dataset" target="_blank" title="http://www.w3.org/ns/dcat#Dataset">Dataset</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#ApplicationProfile" title="http://data.europa.eu2sa/cssv#ApplicationProfile">Application Profile</a> <sup class="type-c" title="class">c</sup>, <a href="#Family" title="http://data.europa.eu2sa/cssv#Family">Family</a> <sup class="type-c" title="class">c</sup>, <a href="#Standard" title="http://data.europa.eu2sa/cssv#Standard">Standard</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#acronym" title="http://data.europa.eu2sa/cssv#acronym">Acronym</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#alternative" title="http://data.europa.eu2sa/cssv#alternative">Alternative</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#combinedIn" title="http://data.europa.eu2sa/cssv#combinedIn">Combined in</a> <sup class="type-op" title="object property">op</sup>, <a href="#configuredIn" title="http://data.europa.eu2sa/cssv#configuredIn">Configured in</a> <sup class="type-op" title="object property">op</sup>, <a href="#isMaintainedBy" title="http://data.europa.eu2sa/cssv#isMaintainedBy">Is maintained by</a> <sup class="type-op" title="object property">op</sup>, <a href="#isRecommendedBy" title="http://data.europa.eu2sa/cssv#isRecommendedBy">Is recommended by</a> <sup class="type-op" title="object property">op</sup>, <a href="#http://www.w3.org/ns/dcat#previousVersion" title="http://www.w3.org/ns/dcat#previousVersion">Previous version</a> <sup class="type-op" title="object property">op</sup>, <a href="#http://purl.org/dc/terms/type" title="http://purl.org/dc/terms/type">Type</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#http://www.w3.org/ns/dcat#version" title="http://www.w3.org/ns/dcat#version">Version</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#http://purl.org/dc/terms/description" title="http://purl.org/dc/terms/description">description</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#http://purl.org/dc/terms/identifier" title="http://purl.org/dc/terms/identifier">identifier</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#http://purl.org/dc/terms/title" title="http://purl.org/dc/terms/title">title</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#combines" title="http://data.europa.eu2sa/cssv#combines">Combines</a> <sup class="type-op" title="object property">op</sup>, <a href="#configures" title="http://data.europa.eu2sa/cssv#configures">Configures</a> <sup class="type-op" title="object property">op</sup>, <a href="#http://www.w3.org/ns/dcat#previousVersion" title="http://www.w3.org/ns/dcat#previousVersion">Previous version</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Standard">
+  <h3>Standard<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://data.europa.eu2sa/cssv#Standard</p>
+  <div class="comment">
+   <span class="markdown">Specification that has reached a certain maturity and widespread adoption and potentially endorsed.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="http://data.europa.eu/w21/e1f84ab1-bad6-4e95-b37a-e54ba7dfc551">http://data.europa.eu/w21/e1f84ab1-bad6-4e95-b37a-e54ba7dfc551</a>
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Specification" title="http://data.europa.eu2sa/cssv#Specification">Specification</a> <sup class="type-c" title="class">c</sup>, <a href="http://purl.org/dc/terms/Standard" target="_blank" title="http://purl.org/dc/terms/Standard">Standard</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#ApplicationProfile" title="http://data.europa.eu2sa/cssv#ApplicationProfile">Application Profile</a> <sup class="type-c" title="class">c</sup>, <a href="#Family" title="http://data.europa.eu2sa/cssv#Family">Family</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
+ <h3 id="properties" class="list">Object Properties</h3>
+ <ul class="hlist">
+  <li><a href="#combinedIn" title="http://data.europa.eu2sa/cssv#combinedIn">Combined in</a></li>
+  <li><a href="#combines" title="http://data.europa.eu2sa/cssv#combines">Combines</a></li>
+  <li><a href="#configuredIn" title="http://data.europa.eu2sa/cssv#configuredIn">Configured in</a></li>
+  <li><a href="#configures" title="http://data.europa.eu2sa/cssv#configures">Configures</a></li>
+  <li><a href="#https://schema.org/contactPoint" title="https://schema.org/contactPoint">Contact point</a></li>
+  <li><a href="#http://purl.org/dc/terms/creator" title="http://purl.org/dc/terms/creator">Creator</a></li>
+  <li><a href="#http://www.w3.org/ns/dcat#distribution" title="http://www.w3.org/ns/dcat#distribution"> <span>distribution</span> </a></li>
+  <li><a href="#isAspectOf" title="http://data.europa.eu2sa/cssv#isAspectOf">Is aspect of</a></li>
+  <li><a href="#isMaintainedBy" title="http://data.europa.eu2sa/cssv#isMaintainedBy">Is maintained by</a></li>
+  <li><a href="#isRecommendedBy" title="http://data.europa.eu2sa/cssv#isRecommendedBy">Is recommended by</a></li>
+  <li><a href="#http://www.w3.org/ns/dcat#previousVersion" title="http://www.w3.org/ns/dcat#previousVersion">Previous version</a></li>
+  <li><a href="#http://www.w3.org/ns/dcat#theme" title="http://www.w3.org/ns/dcat#theme"> <span>Theme</span> </a></li>
+ </ul>
+ <div class="entity" id="combinedIn">
+  <h3>Combined in<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://data.europa.eu2sa/cssv#combinedIn</p>
+  <div class="comment">
+   <span class="markdown">A set of Specifications that are complementary and interrelated, forming a Family of Specifications.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="http://data.europa.eu/w21/e1f84ab1-bad6-4e95-b37a-e54ba7dfc551">http://data.europa.eu/w21/e1f84ab1-bad6-4e95-b37a-e54ba7dfc551</a>
+   </dd>
+  </dl>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Specification" title="http://data.europa.eu2sa/cssv#Specification">Specification</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Family" title="http://data.europa.eu2sa/cssv#Family">Family</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#combines" title="http://data.europa.eu2sa/cssv#combines">Combines</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="combines">
+  <h3>Combines<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://data.europa.eu2sa/cssv#combines</p>
+  <div class="comment">
+   <span class="markdown">Whether a Family is a union of more than one Specifications.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="http://data.europa.eu/w21/e1f84ab1-bad6-4e95-b37a-e54ba7dfc551">http://data.europa.eu/w21/e1f84ab1-bad6-4e95-b37a-e54ba7dfc551</a>
+   </dd>
+  </dl>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Family" title="http://data.europa.eu2sa/cssv#Family">Family</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Specification" title="http://data.europa.eu2sa/cssv#Specification">Specification</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#combinedIn" title="http://data.europa.eu2sa/cssv#combinedIn">Combined in</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="configuredIn">
+  <h3>Configured in<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://data.europa.eu2sa/cssv#configuredIn</p>
+  <div class="comment">
+   <span class="markdown">A set of Specifications potentially for a given use case or policy domain that are aggregated in an ApplicationProfile.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="http://data.europa.eu/w21/e1f84ab1-bad6-4e95-b37a-e54ba7dfc551">http://data.europa.eu/w21/e1f84ab1-bad6-4e95-b37a-e54ba7dfc551</a>
+   </dd>
+  </dl>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Specification" title="http://data.europa.eu2sa/cssv#Specification">Specification</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#ApplicationProfile" title="http://data.europa.eu2sa/cssv#ApplicationProfile">Application Profile</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#configures" title="http://data.europa.eu2sa/cssv#configures">Configures</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="configures">
+  <h3>Configures<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://data.europa.eu2sa/cssv#configures</p>
+  <div class="comment">
+   <span class="markdown">Whether an Application Profile design or adapts a Specification for a specific purpose.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="http://data.europa.eu/w21/e1f84ab1-bad6-4e95-b37a-e54ba7dfc551">http://data.europa.eu/w21/e1f84ab1-bad6-4e95-b37a-e54ba7dfc551</a>
+   </dd>
+  </dl>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#ApplicationProfile" title="http://data.europa.eu2sa/cssv#ApplicationProfile">Application Profile</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Specification" title="http://data.europa.eu2sa/cssv#Specification">Specification</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#configuredIn" title="http://data.europa.eu2sa/cssv#configuredIn">Configured in</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="https://schema.org/contactPoint">
+  <h3>Contact point<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://schema.org/contactPoint</p>
+  <div class="comment">
+   <span class="markdown">A contact point for a person or organisation.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="https://schema.org/ContactPoint" target="_blank" title="https://schema.org/ContactPoint">Contact Point</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://xmlns.com/foaf/0.1/Agent" target="_blank" title="http://xmlns.com/foaf/0.1/Agent">Agent</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/creator">
+  <h3>Creator<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/creator</p>
+  <div class="comment">
+   <span class="markdown">An entity primarily responsible for making the resource.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/ns/dcat#Resource" target="_blank" title="http://www.w3.org/ns/dcat#Resource">Resource</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://xmlns.com/foaf/0.1/Agent" target="_blank" title="http://xmlns.com/foaf/0.1/Agent">Agent</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://www.w3.org/ns/dcat#distribution">
+  <h3>distribution<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/ns/dcat#distribution</p>
+  <div class="comment">
+   <span class="markdown">An available distribution of the dataset.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/ns/dcat#Dataset" target="_blank" title="http://www.w3.org/ns/dcat#Dataset">Dataset</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/ns/dcat#Distribution" target="_blank" title="http://www.w3.org/ns/dcat#Distribution">Distribution</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="isAspectOf">
+  <h3>Is aspect of<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://data.europa.eu2sa/cssv#isAspectOf</p>
+  <div class="comment">
+   <span class="markdown">ApplicationProfile is a part of a Profile.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="http://data.europa.eu/w21/e1f84ab1-bad6-4e95-b37a-e54ba7dfc551">http://data.europa.eu/w21/e1f84ab1-bad6-4e95-b37a-e54ba7dfc551</a>
+   </dd>
+  </dl>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#ApplicationProfile" title="http://data.europa.eu2sa/cssv#ApplicationProfile">Application Profile</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="https://www.w3.org/TR/dx-prof/#Profile" target="_blank" title="https://www.w3.org/TR/dx-prof/#Profile">Profile</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="isMaintainedBy">
+  <h3>Is maintained by<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://data.europa.eu2sa/cssv#isMaintainedBy</p>
+  <div class="comment">
+   <span class="markdown">The Person, Organisation reponsible to update and maintain the specification.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="http://data.europa.eu/w21/e1f84ab1-bad6-4e95-b37a-e54ba7dfc551">http://data.europa.eu/w21/e1f84ab1-bad6-4e95-b37a-e54ba7dfc551</a>
+   </dd>
+  </dl>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Specification" title="http://data.europa.eu2sa/cssv#Specification">Specification</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://xmlns.com/foaf/0.1/Agent" target="_blank" title="http://xmlns.com/foaf/0.1/Agent">Agent</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="isRecommendedBy">
+  <h3>Is recommended by<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://data.europa.eu2sa/cssv#isRecommendedBy</p>
+  <div class="comment">
+   <span class="markdown">A link to any other person or organisation that recommends the specification.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="http://data.europa.eu/w21/e1f84ab1-bad6-4e95-b37a-e54ba7dfc551">http://data.europa.eu/w21/e1f84ab1-bad6-4e95-b37a-e54ba7dfc551</a>
+   </dd>
+  </dl>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Specification" title="http://data.europa.eu2sa/cssv#Specification">Specification</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://xmlns.com/foaf/0.1/Agent" target="_blank" title="http://xmlns.com/foaf/0.1/Agent">Agent</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://www.w3.org/ns/dcat#previousVersion">
+  <h3>Previous version<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/ns/dcat#previousVersion</p>
+  <div class="comment">
+   <span class="markdown">The previous version of a resource in a lineage.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="https://www.w3.org/ns/dcat#">https://www.w3.org/ns/dcat#</a>
+   </dd>
+  </dl>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Specification" title="http://data.europa.eu2sa/cssv#Specification">Specification</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Specification" title="http://data.europa.eu2sa/cssv#Specification">Specification</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://www.w3.org/ns/dcat#theme">
+  <h3>Theme<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/ns/dcat#theme</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/ns/dcat#Resource" target="_blank" title="http://www.w3.org/ns/dcat#Resource">Resource</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is also defined as
+    </dt>
+    <dd>
+     <a href="#http://www.w3.org/ns/dcat#theme">data property</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="dataproperties">
+ <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+ <ul class="hlist">
+  <li><a href="#http://purl.org/dc/terms/accessRights" title="http://purl.org/dc/terms/accessRights">Access rights</a></li>
+  <li><a href="#http://www.w3.org/ns/dcat#accessURL" title="http://www.w3.org/ns/dcat#accessURL">Access URL</a></li>
+  <li><a href="#acronym" title="http://data.europa.eu2sa/cssv#acronym">Acronym</a></li>
+  <li><a href="#alternative" title="http://data.europa.eu2sa/cssv#alternative">Alternative</a></li>
+  <li><a href="#http://purl.org/dc/terms/description" title="http://purl.org/dc/terms/description"> <span>description</span> </a></li>
+  <li><a href="#http://www.w3.org/ns/dcat#downloadURL" title="http://www.w3.org/ns/dcat#downloadURL">Download URL</a></li>
+  <li><a href="#http://purl.org/dc/terms/identifier" title="http://purl.org/dc/terms/identifier"> <span>identifier</span> </a></li>
+  <li><a href="#http://purl.org/dc/terms/license" title="http://purl.org/dc/terms/license"> <span>license</span> </a></li>
+  <li><a href="#http://purl.org/dc/terms/rights" title="http://purl.org/dc/terms/rights"> <span>rights</span> </a></li>
+  <li><a href="#http://www.w3.org/ns/dcat#theme" title="http://www.w3.org/ns/dcat#theme"> <span>Theme</span> </a></li>
+  <li><a href="#http://purl.org/dc/terms/title" title="http://purl.org/dc/terms/title"> <span>title</span> </a></li>
+  <li><a href="#http://purl.org/dc/terms/type" title="http://purl.org/dc/terms/type">Type</a></li>
+  <li><a href="#http://www.w3.org/ns/dcat#version" title="http://www.w3.org/ns/dcat#version">Version</a></li>
+ </ul>
+ <div class="entity" id="http://purl.org/dc/terms/accessRights">
+  <h3>Access rights<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/accessRights</p>
+  <div class="comment">
+   <span class="markdown">A rights statement that concerns how the distribution is accessed.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/ns/dcat#Resource" target="_blank" title="http://www.w3.org/ns/dcat#Resource">Resource</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2000/01/rdf-schema#Literal" target="_blank" title="http://www.w3.org/2000/01/rdf-schema#Literal">Literal</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://www.w3.org/ns/dcat#accessURL">
+  <h3>Access URL<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/ns/dcat#accessURL</p>
+  <div class="comment">
+   <span class="markdown">A URL of the resource that gives access to a distribution of the dataset.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/ns/dcat#Distribution" target="_blank" title="http://www.w3.org/ns/dcat#Distribution">Distribution</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2000/01/rdf-schema#Literal" target="_blank" title="http://www.w3.org/2000/01/rdf-schema#Literal">Literal</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="acronym">
+  <h3>Acronym<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://data.europa.eu2sa/cssv#acronym</p>
+  <div class="comment">
+   <span class="markdown">Abbreviation of the specification.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="http://data.europa.eu2sa/cssv#">http://data.europa.eu2sa/cssv#</a>
+   </dd>
+  </dl>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Specification" title="http://data.europa.eu2sa/cssv#Specification">Specification</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2000/01/rdf-schema#Literal" target="_blank" title="http://www.w3.org/2000/01/rdf-schema#Literal">Literal</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="alternative">
+  <h3>Alternative<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://data.europa.eu2sa/cssv#alternative</p>
+  <div class="comment">
+   <span class="markdown">The alternative name of the specification.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="http://data.europa.eu2sa/cssv#">http://data.europa.eu2sa/cssv#</a>
+   </dd>
+  </dl>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Specification" title="http://data.europa.eu2sa/cssv#Specification">Specification</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2000/01/rdf-schema#Literal" target="_blank" title="http://www.w3.org/2000/01/rdf-schema#Literal">Literal</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/description">
+  <h3>description<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/description</p>
+  <div class="comment">
+   <span class="markdown">Brief description of the resource.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Specification" title="http://data.europa.eu2sa/cssv#Specification">Specification</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2000/01/rdf-schema#Literal" target="_blank" title="http://www.w3.org/2000/01/rdf-schema#Literal">Literal</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://www.w3.org/ns/dcat#downloadURL">
+  <h3>Download URL<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/ns/dcat#downloadURL</p>
+  <div class="comment">
+   <span class="markdown">The URL of the downloadable file in a given format.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/ns/dcat#Distribution" target="_blank" title="http://www.w3.org/ns/dcat#Distribution">Distribution</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2000/01/rdf-schema#Literal" target="_blank" title="http://www.w3.org/2000/01/rdf-schema#Literal">Literal</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/identifier">
+  <h3>identifier<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/identifier</p>
+  <div class="comment">
+   <span class="markdown">A unique identifier of the resource being described or cataloged.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Specification" title="http://data.europa.eu2sa/cssv#Specification">Specification</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2000/01/rdf-schema#Literal" target="_blank" title="http://www.w3.org/2000/01/rdf-schema#Literal">Literal</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/license">
+  <h3>license<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/license</p>
+  <div class="comment">
+   <span class="markdown">A legal document under which the resource is made available.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/ns/dcat#Resource" target="_blank" title="http://www.w3.org/ns/dcat#Resource">Resource</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2000/01/rdf-schema#Literal" target="_blank" title="http://www.w3.org/2000/01/rdf-schema#Literal">Literal</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/rights">
+  <h3>rights<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/rights</p>
+  <div class="comment">
+   <span class="markdown">Information about rights held in and over the distribution.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/ns/dcat#Resource" target="_blank" title="http://www.w3.org/ns/dcat#Resource">Resource</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2000/01/rdf-schema#Literal" target="_blank" title="http://www.w3.org/2000/01/rdf-schema#Literal">Literal</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://www.w3.org/ns/dcat#theme">
+  <h3>Theme<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/ns/dcat#theme</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2004/02/skos/core#Concept" target="_blank" title="http://www.w3.org/2004/02/skos/core#Concept">Concept</a> <sup class="type-ep" title="external property">ep</sup>
+    </dd>
+    <dt>
+     is also defined as
+    </dt>
+    <dd>
+     <a href="#http://www.w3.org/ns/dcat#theme">object property</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/title">
+  <h3>title<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/title</p>
+  <div class="comment">
+   <span class="markdown">A name given to the Specification.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Specification" title="http://data.europa.eu2sa/cssv#Specification">Specification</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2000/01/rdf-schema#Literal" target="_blank" title="http://www.w3.org/2000/01/rdf-schema#Literal">Literal</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/type">
+  <h3>Type<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/type</p>
+  <div class="comment">
+   <span class="markdown">The nature or genre of the resource.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Specification" title="http://data.europa.eu2sa/cssv#Specification">Specification</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2004/02/skos/core#Concept" target="_blank" title="http://www.w3.org/2004/02/skos/core#Concept">Concept</a> <sup class="type-ep" title="external property">ep</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://www.w3.org/ns/dcat#version">
+  <h3>Version<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/ns/dcat#version</p>
+  <div class="comment">
+   <span class="markdown">The version indicator (name or identifier) of a resource.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/dcat#">http://www.w3.org/ns/dcat#</a>
+   </dd>
+  </dl>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Specification" title="http://data.europa.eu2sa/cssv#Specification">Specification</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2000/01/rdf-schema#Literal" target="_blank" title="http://www.w3.org/2000/01/rdf-schema#Literal">Literal</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+<sup class="type-ep" title="External Properties">ep</sup>: External Properties
+</div>
+</div>
+</div>
+    
+
+<!--REFERENCES SECTION-->
+  <div id="references">
+<h2 id="ref" class="list">References <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+Add your references here. It is recommended to have them as a list.</span>
+
+</div>
+<div id="acknowledgments">
+<h2 id="ack" class="list">Acknowledgments <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<p>
+The authors would like to thank <a href="http://www.essepuntato.it/">Silvio Peroni</a> for developing <a href="http://www.essepuntato.it/lode">LODE</a>, a Live OWL Documentation Environment, which is used for representing the Cross Referencing Section of this document and <a href="https://w3id.org/people/dgarijo">Daniel Garijo</a> for developing <a href="https://github.com/dgarijo/Widoco">Widoco</a>, the program used to create the template used in this documentation.</p>
+</div>
+
+
+</div>
+</body>
+</html>

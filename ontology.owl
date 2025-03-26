@@ -1,0 +1,694 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://data.europa.eu2sa/cssv#"
+     xml:base="http://data.europa.eu2sa/cssv"
+     xmlns:ns="http://creativecommons.org/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://data.europa.eu2sa/cssv#">
+        <owl:versionIRI rdf:resource="http://data.europa.eu2sa/cssv#"/>
+        <ns:attributionName>European Commission</ns:attributionName>
+        <terms:date>2024-11-29</terms:date>
+        <terms:mediator rdf:nodeID="genid1"/>
+        <vann:preferredNamespacePrefix>cssv</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>http://data.europa.eu2sa/cssv#</vann:preferredNamespaceUri>
+        <rdfs:label>Core Standards and Specifications Vocabulary</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/isa-camss/CSSV"/>
+        <rdfs:seeAlso rdf:resource="https://joinup.ec.europa.eu/collection/common-assessment-method-standards-and-specifications-camss/solution/core-standards-and-specifications-vocabulary-cssv"/>
+        <owl:versionInfo>1.4.0</owl:versionInfo>
+        <skos:note>This file has been generated with Protégé.</skos:note>
+        <foaf:maker rdf:nodeID="genid2"/>
+    </owl:Ontology>
+    <rdf:Description rdf:nodeID="genid1">
+        <foaf:homepage>https://interoperable-europe.ec.europa.eu/collection/common-assessment-method-standards-and-specifications-camss</foaf:homepage>
+        <foaf:name>Common Assessment Method for Standards and Specifications (CAMSS)</foaf:name>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid2">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <foaf:firstName>Common Assessment Method for Standards and Specifications (CAMSS)</foaf:firstName>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://creativecommons.org/ns#attributionName -->
+
+
+    <owl:AnnotationProperty rdf:about="http://creativecommons.org/ns#attributionName"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/date -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/date"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/mediator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/mediator"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#altLabel -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#altLabel"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#label -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#label"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#note -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#note"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/firstName -->
+
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/firstName"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/homepage -->
+
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/homepage"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/maker -->
+
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/maker"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/name -->
+
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/name"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#Literal -->
+
+
+    <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Literal">
+        <owl:equivalentClass rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+        <owl:equivalentClass rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <owl:equivalentClass rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <owl:equivalentClass rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <owl:equivalentClass rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <owl:equivalentClass rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://data.europa.eu2sa/cssv#combinedIn -->
+
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu2sa/cssv#combinedIn">
+        <owl:inverseOf rdf:resource="http://data.europa.eu2sa/cssv#combines"/>
+        <rdfs:domain rdf:resource="http://data.europa.eu2sa/cssv#Specification"/>
+        <rdfs:range rdf:resource="http://data.europa.eu2sa/cssv#Family"/>
+        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/w21/e1f84ab1-bad6-4e95-b37a-e54ba7dfc551"/>
+        <skos:definition xml:lang="en">A set of Specifications that are complementary and interrelated, forming a Family of Specifications.</skos:definition>
+        <skos:prefLabel xml:lang="en">Combined in</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu2sa/cssv#combines -->
+
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu2sa/cssv#combines">
+        <rdfs:domain rdf:resource="http://data.europa.eu2sa/cssv#Family"/>
+        <rdfs:range rdf:resource="http://data.europa.eu2sa/cssv#Specification"/>
+        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/w21/e1f84ab1-bad6-4e95-b37a-e54ba7dfc551"/>
+        <skos:definition xml:lang="en">Whether a Family is a union of more than one Specifications.</skos:definition>
+        <skos:prefLabel xml:lang="en">Combines</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu2sa/cssv#configuredIn -->
+
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu2sa/cssv#configuredIn">
+        <owl:inverseOf rdf:resource="http://data.europa.eu2sa/cssv#configures"/>
+        <rdfs:domain rdf:resource="http://data.europa.eu2sa/cssv#Specification"/>
+        <rdfs:range rdf:resource="http://data.europa.eu2sa/cssv#ApplicationProfile"/>
+        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/w21/e1f84ab1-bad6-4e95-b37a-e54ba7dfc551"/>
+        <skos:definition xml:lang="en">A set of Specifications potentially for a given use case or policy domain that are aggregated in an ApplicationProfile.</skos:definition>
+        <skos:prefLabel xml:lang="en">Configured in</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu2sa/cssv#configures -->
+
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu2sa/cssv#configures">
+        <rdfs:domain rdf:resource="http://data.europa.eu2sa/cssv#ApplicationProfile"/>
+        <rdfs:range rdf:resource="http://data.europa.eu2sa/cssv#Specification"/>
+        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/w21/e1f84ab1-bad6-4e95-b37a-e54ba7dfc551"/>
+        <skos:definition xml:lang="en">Whether an Application Profile design or adapts a Specification for a specific purpose.</skos:definition>
+        <skos:prefLabel xml:lang="en">Configures</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu2sa/cssv#isAspectOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu2sa/cssv#isAspectOf">
+        <rdfs:domain rdf:resource="http://data.europa.eu2sa/cssv#ApplicationProfile"/>
+        <rdfs:range rdf:resource="https://www.w3.org/TR/dx-prof/#Profile"/>
+        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/w21/e1f84ab1-bad6-4e95-b37a-e54ba7dfc551"/>
+        <skos:definition xml:lang="en">ApplicationProfile is a part of a Profile.</skos:definition>
+        <skos:prefLabel xml:lang="en">Is aspect of</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu2sa/cssv#isMaintainedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu2sa/cssv#isMaintainedBy">
+        <rdfs:domain rdf:resource="http://data.europa.eu2sa/cssv#Specification"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/w21/e1f84ab1-bad6-4e95-b37a-e54ba7dfc551"/>
+        <skos:definition xml:lang="en">The Person, Organisation reponsible to update and maintain the specification.</skos:definition>
+        <skos:prefLabel xml:lang="en">Is maintained by</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu2sa/cssv#isRecommendedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu2sa/cssv#isRecommendedBy">
+        <rdfs:domain rdf:resource="http://data.europa.eu2sa/cssv#Specification"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/w21/e1f84ab1-bad6-4e95-b37a-e54ba7dfc551"/>
+        <rdfs:label>Is recommended by</rdfs:label>
+        <skos:definition>A link to any other person or organisation that recommends the specification.</skos:definition>
+        <skos:prefLabel>Is recommended by</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/creator">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/dcat#Resource"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:label xml:lang="en">Creator</rdfs:label>
+        <skos:definition xml:lang="en">An entity primarily responsible for making the resource.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#distribution -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/dcat#distribution">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+        <skos:definition xml:lang="en">An available distribution of the dataset.</skos:definition>
+        <skos:label xml:lang="en">Distribution</skos:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#previousVersion -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/dcat#previousVersion">
+        <rdfs:domain rdf:resource="http://data.europa.eu2sa/cssv#Specification"/>
+        <rdfs:range rdf:resource="http://data.europa.eu2sa/cssv#Specification"/>
+        <rdfs:isDefinedBy rdf:resource="https://www.w3.org/ns/dcat#"/>
+        <rdfs:label xml:lang="en">Previous version</rdfs:label>
+        <skos:definition xml:lang="en">The previous version of a resource in a lineage.</skos:definition>
+        <skos:prefLabel xml:lang="en">Previous version</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#theme -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/dcat#theme">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/dcat#Resource"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/contactPoint -->
+
+
+    <owl:ObjectProperty rdf:about="https://schema.org/contactPoint">
+        <rdfs:domain rdf:resource="https://schema.org/ContactPoint"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:label xml:lang="en">Contact point</rdfs:label>
+        <skos:definition xml:lang="en">A contact point for a person or organisation.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://data.europa.eu2sa/cssv#acronym -->
+
+
+    <owl:DatatypeProperty rdf:about="http://data.europa.eu2sa/cssv#acronym">
+        <rdfs:domain rdf:resource="http://data.europa.eu2sa/cssv#Specification"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu2sa/cssv#"/>
+        <skos:altLabel xml:lang="en">Has acronym</skos:altLabel>
+        <skos:definition xml:lang="en">Abbreviation of the specification.</skos:definition>
+        <skos:prefLabel xml:lang="en">Acronym</skos:prefLabel>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://data.europa.eu2sa/cssv#alternative -->
+
+
+    <owl:DatatypeProperty rdf:about="http://data.europa.eu2sa/cssv#alternative">
+        <rdfs:domain rdf:resource="http://data.europa.eu2sa/cssv#Specification"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu2sa/cssv#"/>
+        <skos:definition xml:lang="en">The alternative name of the specification.</skos:definition>
+        <skos:prefLabel xml:lang="en">Alternative</skos:prefLabel>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/accessRights -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/accessRights">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/dcat#Resource"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label xml:lang="en">Access rights</rdfs:label>
+        <skos:definition xml:lang="en">A rights statement that concerns how the distribution is accessed.</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/description">
+        <rdfs:domain rdf:resource="http://data.europa.eu2sa/cssv#Specification"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <skos:definition xml:lang="en">Brief description of the resource.</skos:definition>
+        <skos:label xml:lang="en">Description</skos:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/identifier -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/identifier">
+        <rdfs:domain rdf:resource="http://data.europa.eu2sa/cssv#Specification"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <skos:definition xml:lang="en">A unique identifier of the resource being described or cataloged.</skos:definition>
+        <skos:label xml:lang="en">Identifier</skos:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/license">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/dcat#Resource"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <skos:definition xml:lang="en">A legal document under which the resource is made available.</skos:definition>
+        <skos:label xml:lang="en">License</skos:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/rights -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/rights">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/dcat#Resource"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <skos:definition xml:lang="en">Information about rights held in and over the distribution.</skos:definition>
+        <skos:label xml:lang="en">Rights</skos:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/title">
+        <rdfs:domain rdf:resource="http://data.europa.eu2sa/cssv#Specification"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <skos:definition xml:lang="en">A name given to the Specification.</skos:definition>
+        <skos:label xml:lang="en">Title</skos:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/type -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/type">
+        <rdfs:domain rdf:resource="http://data.europa.eu2sa/cssv#Specification"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Type</rdfs:label>
+        <skos:definition xml:lang="en">The nature or genre of the resource.</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#accessURL -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/dcat#accessURL">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label xml:lang="en">Access URL</rdfs:label>
+        <skos:definition xml:lang="en">A URL of the resource that gives access to a distribution of the dataset.</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#downloadURL -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/dcat#downloadURL">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label xml:lang="en">Download URL</rdfs:label>
+        <skos:definition xml:lang="en">The URL of the downloadable file in a given format.</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#theme -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/dcat#theme">
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#version -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/dcat#version">
+        <rdfs:domain rdf:resource="http://data.europa.eu2sa/cssv#Specification"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/dcat#"/>
+        <rdfs:label xml:lang="en">Version</rdfs:label>
+        <skos:definition xml:lang="en">The version indicator (name or identifier) of a resource.</skos:definition>
+        <skos:prefLabel xml:lang="en">Version</skos:prefLabel>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://data.europa.eu2sa/cssv#ApplicationProfile -->
+
+
+    <owl:Class rdf:about="http://data.europa.eu2sa/cssv#ApplicationProfile">
+        <rdfs:subClassOf rdf:resource="http://data.europa.eu2sa/cssv#Specification"/>
+        <owl:disjointWith rdf:resource="http://data.europa.eu2sa/cssv#Family"/>
+        <owl:disjointWith rdf:resource="http://data.europa.eu2sa/cssv#Standard"/>
+        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/w21/e1f84ab1-bad6-4e95-b37a-e54ba7dfc551"/>
+        <skos:definition xml:lang="en">An application profile “customises one or more existing specifications potentially for a given use case or a policy domain adding an end to end narrative describing and ensuring the interoperability of its underlying specification(s)”.</skos:definition>
+        <skos:prefLabel xml:lang="en">Application Profile</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://data.europa.eu2sa/cssv#Family -->
+
+
+    <owl:Class rdf:about="http://data.europa.eu2sa/cssv#Family">
+        <rdfs:subClassOf rdf:resource="http://data.europa.eu2sa/cssv#Specification"/>
+        <owl:disjointWith rdf:resource="http://data.europa.eu2sa/cssv#Standard"/>
+        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/w21/e1f84ab1-bad6-4e95-b37a-e54ba7dfc551"/>
+        <skos:definition xml:lang="en">A collection of interrelated and/or complementary specifications, standards or application profiles and the explanation of how they are combined, used or both.</skos:definition>
+        <skos:prefLabel xml:lang="en">Family</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://data.europa.eu2sa/cssv#Specification -->
+
+
+    <owl:Class rdf:about="http://data.europa.eu2sa/cssv#Specification">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/w21/e1f84ab1-bad6-4e95-b37a-e54ba7dfc551"/>
+        <skos:definition xml:lang="en">Document with normative guidelines or characteristics that can be used consistently to ensure that materials, products, processes and services conform to one or a set of requirements (ISO). Specifications are the cornerstone of interoperability, as they set the grounds for the design and development of interoperable and reusable solutions based in common services at the lowest level.</skos:definition>
+        <skos:prefLabel xml:lang="en">Specification</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://data.europa.eu2sa/cssv#Standard -->
+
+
+    <owl:Class rdf:about="http://data.europa.eu2sa/cssv#Standard">
+        <rdfs:subClassOf rdf:resource="http://data.europa.eu2sa/cssv#Specification"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/dc/terms/Standard"/>
+        <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/w21/e1f84ab1-bad6-4e95-b37a-e54ba7dfc551"/>
+        <skos:definition xml:lang="en">Specification that has reached a certain maturity and widespread adoption and potentially endorsed.</skos:definition>
+        <skos:prefLabel xml:lang="en">Standard</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/dc/terms/Standard -->
+
+
+    <owl:Class rdf:about="http://purl.org/dc/terms/Standard"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#Dataset -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/dcat#Dataset"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#Distribution -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/dcat#Distribution"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#Resource -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/dcat#Resource"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Agent -->
+
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Agent"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+    
+
+
+    <!-- https://schema.org/ContactPoint -->
+
+
+    <owl:Class rdf:about="https://schema.org/ContactPoint"/>
+    
+
+
+    <!-- https://www.w3.org/TR/dx-prof/#Profile -->
+
+
+    <owl:Class rdf:about="https://www.w3.org/TR/dx-prof/#Profile"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://data.europa.eu2sa/cssv# -->
+
+
+    <owl:NamedIndividual rdf:about="http://data.europa.eu2sa/cssv#">
+        <terms:description xml:lang="en">This module provides the definitions for the Core Standards and Specifications Vocabulary.</terms:description>
+        <terms:title xml:lang="en">Core Standards and Specifications Vocabulary</terms:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#Resource -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/dcat#theme">
+        <rdfs:label xml:lang="en">Theme</rdfs:label>
+        <skos:definition xml:lang="en">A main category of the resource. A resource can have multiple themes.</skos:definition>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+
