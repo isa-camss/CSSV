@@ -1,0 +1,1198 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "https://schema.org", "https://www.w3.org/TR/dx-prof/", "http://purl.org/dc/terms", "http://www.w3.org/2001/XMLSchema", "http://data.europa.eu2sa/cssv", "http://www.w3.org/ns/dcat", "http://xmlns.com/foaf/0.1", "http://www.w3.org/2004/02/skos/core" ],
+    "iri" : "http://data.europa.eu2sa/cssv#",
+    "version" : "1.4.0",
+    "labels" : {
+      "undefined" : "Core Standards and Specifications Vocabulary"
+    },
+    "other" : {
+      "date" : [ {
+        "identifier" : "date",
+        "language" : "undefined",
+        "value" : "2024-11-29",
+        "type" : "label"
+      } ],
+      "note" : [ {
+        "identifier" : "note",
+        "language" : "undefined",
+        "value" : "This file has been generated with Protégé.",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "cssv",
+        "type" : "label"
+      } ],
+      "attributionName" : [ {
+        "identifier" : "attributionName",
+        "language" : "undefined",
+        "value" : "European Commission",
+        "type" : "label"
+      } ],
+      "maker" : [ {
+        "identifier" : "maker",
+        "language" : "undefined",
+        "value" : "_:genid2147483654",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "1.4.0",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "http://data.europa.eu2sa/cssv#",
+        "type" : "label"
+      } ],
+      "mediator" : [ {
+        "identifier" : "mediator",
+        "language" : "undefined",
+        "value" : "_:genid2147483655",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://joinup.ec.europa.eu/collection/common-assessment-method-standards-and-specifications-camss/solution/core-standards-and-specifications-vocabulary-cssv",
+        "type" : "iri"
+      }, {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://github.com/isa-camss/CSSV",
+        "type" : "iri"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "27",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "29",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "32",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "19",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "33",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "owl:Class"
+  }, {
+    "id" : "37",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "38",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "36",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "40",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "44",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "31",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "22",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "17",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "45",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "56",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "55",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://xmlns.com/foaf/0.1/Agent",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Agent"
+    },
+    "attributes" : [ "external" ],
+    "id" : "4"
+  }, {
+    "iri" : "http://data.europa.eu2sa/cssv#ApplicationProfile",
+    "baseIri" : "http://data.europa.eu2sa/cssv",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://data.europa.eu/w21/e1f84ab1-bad6-4e95-b37a-e54ba7dfc551",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Application Profile",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "An application profile “customises one or more existing specifications potentially for a given use case or a policy domain adding an end to end narrative describing and ensuring the interoperability of its underlying specification(s)”.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ApplicationProfile"
+    },
+    "id" : "1",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "https://www.w3.org/TR/dx-prof/#Profile",
+    "baseIri" : "https://www.w3.org/TR/dx-prof/",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Profile"
+    },
+    "attributes" : [ "external" ],
+    "id" : "5"
+  }, {
+    "iri" : "http://data.europa.eu2sa/cssv#Family",
+    "baseIri" : "http://data.europa.eu2sa/cssv",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://data.europa.eu/w21/e1f84ab1-bad6-4e95-b37a-e54ba7dfc551",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Family",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A collection of interrelated and/or complementary specifications, standards or application profiles and the explanation of how they are combined, used or both.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Family"
+    },
+    "id" : "20",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://data.europa.eu2sa/cssv#Standard",
+    "baseIri" : "http://data.europa.eu2sa/cssv",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://data.europa.eu/w21/e1f84ab1-bad6-4e95-b37a-e54ba7dfc551",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Standard",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Specification that has reached a certain maturity and widespread adoption and potentially endorsed.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Standard"
+    },
+    "id" : "14",
+    "superClasses" : [ "15", "2" ]
+  }, {
+    "iri" : "http://www.w3.org/ns/dcat#Resource",
+    "baseIri" : "http://www.w3.org/ns/dcat",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Resource"
+    },
+    "attributes" : [ "external" ],
+    "id" : "7"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "8",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#Concept",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "id" : "27",
+    "label" : {
+      "IRI-based" : "Concept"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "29",
+    "label" : {
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "32",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "19",
+    "label" : {
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "33",
+    "label" : {
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://data.europa.eu2sa/cssv#Specification",
+    "baseIri" : "http://data.europa.eu2sa/cssv",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://data.europa.eu/w21/e1f84ab1-bad6-4e95-b37a-e54ba7dfc551",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Specification",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Document with normative guidelines or characteristics that can be used consistently to ensure that materials, products, processes and services conform to one or a set of requirements (ISO). Specifications are the cornerstone of interoperability, as they set the grounds for the design and development of interoperable and reusable solutions based in common services at the lowest level.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Specification"
+    },
+    "subClasses" : [ "20", "14", "1" ],
+    "id" : "2",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/Person",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Person"
+    },
+    "attributes" : [ "external" ],
+    "id" : "34"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "37",
+    "label" : {
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#Concept",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "id" : "38",
+    "label" : {
+      "IRI-based" : "Concept"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "36",
+    "label" : {
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "40",
+    "label" : {
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/ns/dcat#Distribution",
+    "baseIri" : "http://www.w3.org/ns/dcat",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Distribution"
+    },
+    "attributes" : [ "external" ],
+    "id" : "25"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "44",
+    "label" : {
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "31",
+    "label" : {
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "22",
+    "label" : {
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "17",
+    "label" : {
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "45",
+    "label" : {
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Literal"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+      "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+      "labels" : {
+        "IRI-based" : "Resource"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "56"
+  }, {
+    "iri" : "http://www.w3.org/ns/dcat#Dataset",
+    "baseIri" : "http://www.w3.org/ns/dcat",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Dataset"
+    },
+    "subClasses" : [ "2" ],
+    "attributes" : [ "external" ],
+    "id" : "10"
+  }, {
+    "iri" : "https://schema.org/ContactPoint",
+    "baseIri" : "https://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ContactPoint"
+    },
+    "attributes" : [ "external" ],
+    "id" : "55"
+  }, {
+    "iri" : "http://purl.org/dc/terms/Standard",
+    "baseIri" : "http://purl.org/dc/terms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Standard"
+    },
+    "subClasses" : [ "14" ],
+    "attributes" : [ "external" ],
+    "id" : "15"
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "3",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "6",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "9",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "11",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "12",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "13",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "16",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "18",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "21",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "23",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "24",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "26",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "28",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "30",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "35",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "39",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "41",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "42",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "43",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "46",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "47",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "48",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "49",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "50",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "52",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "53",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "54",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "51",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "57",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "58",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "59",
+    "type" : "owl:datatypeProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://data.europa.eu2sa/cssv#configures",
+    "baseIri" : "http://data.europa.eu2sa/cssv",
+    "range" : "2",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://data.europa.eu/w21/e1f84ab1-bad6-4e95-b37a-e54ba7dfc551",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Configures",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Whether an Application Profile design or adapts a Specification for a specific purpose.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "configures"
+    },
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://www.w3.org/ns/dcat#previousVersion",
+    "baseIri" : "http://www.w3.org/ns/dcat",
+    "range" : "2",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://www.w3.org/ns/dcat#",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Previous version",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "The previous version of a resource in a lineage.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "previousVersion",
+      "en" : "Previous version"
+    },
+    "domain" : "2",
+    "attributes" : [ "external", "object" ],
+    "id" : "3"
+  }, {
+    "iri" : "http://www.w3.org/ns/dcat#theme",
+    "baseIri" : "http://www.w3.org/ns/dcat",
+    "range" : "8",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A main category of the resource. A resource can have multiple themes.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "theme",
+      "en" : "Theme"
+    },
+    "domain" : "7",
+    "attributes" : [ "external", "object" ],
+    "id" : "6"
+  }, {
+    "range" : "10",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "9"
+  }, {
+    "iri" : "http://data.europa.eu2sa/cssv#configuredIn",
+    "inverse" : "0",
+    "baseIri" : "http://data.europa.eu2sa/cssv",
+    "range" : "1",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://data.europa.eu/w21/e1f84ab1-bad6-4e95-b37a-e54ba7dfc551",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Configured in",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A set of Specifications potentially for a given use case or policy domain that are aggregated in an ApplicationProfile.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "configuredIn"
+    },
+    "domain" : "2",
+    "attributes" : [ "object" ],
+    "id" : "11"
+  }, {
+    "range" : "2",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "12"
+  }, {
+    "range" : "15",
+    "domain" : "14",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "13"
+  }, {
+    "iri" : "http://purl.org/dc/terms/license",
+    "baseIri" : "http://purl.org/dc/terms",
+    "range" : "17",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A legal document under which the resource is made available.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "license",
+      "en" : "License"
+    },
+    "domain" : "7",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "16"
+  }, {
+    "iri" : "http://www.w3.org/ns/dcat#version",
+    "baseIri" : "http://www.w3.org/ns/dcat",
+    "range" : "19",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/dcat#",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Version",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "The version indicator (name or identifier) of a resource.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "version",
+      "en" : "Version"
+    },
+    "domain" : "2",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "18"
+  }, {
+    "iri" : "http://purl.org/dc/terms/identifier",
+    "baseIri" : "http://purl.org/dc/terms",
+    "range" : "22",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A unique identifier of the resource being described or cataloged.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "identifier",
+      "en" : "Identifier"
+    },
+    "domain" : "2",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "21"
+  }, {
+    "range" : "2",
+    "domain" : "20",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "23"
+  }, {
+    "iri" : "http://www.w3.org/ns/dcat#distribution",
+    "baseIri" : "http://www.w3.org/ns/dcat",
+    "range" : "25",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "An available distribution of the dataset.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "distribution",
+      "en" : "Distribution"
+    },
+    "domain" : "10",
+    "attributes" : [ "external", "object" ],
+    "id" : "24"
+  }, {
+    "range" : "2",
+    "domain" : "14",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "26"
+  }, {
+    "iri" : "http://data.europa.eu2sa/cssv#isAspectOf",
+    "baseIri" : "http://data.europa.eu2sa/cssv",
+    "range" : "5",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://data.europa.eu/w21/e1f84ab1-bad6-4e95-b37a-e54ba7dfc551",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Is aspect of",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "ApplicationProfile is a part of a Profile.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isAspectOf"
+    },
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "28"
+  }, {
+    "iri" : "http://purl.org/dc/terms/description",
+    "baseIri" : "http://purl.org/dc/terms",
+    "range" : "31",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Brief description of the resource.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "description",
+      "en" : "Description"
+    },
+    "domain" : "2",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "30"
+  }, {
+    "iri" : "http://data.europa.eu2sa/cssv#acronym",
+    "baseIri" : "http://data.europa.eu2sa/cssv",
+    "range" : "36",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://data.europa.eu2sa/cssv#",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Acronym",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "en",
+        "value" : "Has acronym",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Abbreviation of the specification.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "acronym"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype" ],
+    "id" : "35"
+  }, {
+    "iri" : "http://data.europa.eu2sa/cssv#alternative",
+    "baseIri" : "http://data.europa.eu2sa/cssv",
+    "range" : "40",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://data.europa.eu2sa/cssv#",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Alternative",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "The alternative name of the specification.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "alternative"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype" ],
+    "id" : "39"
+  }, {
+    "range" : "14",
+    "domain" : "20",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "41"
+  }, {
+    "iri" : "http://www.w3.org/ns/dcat#accessURL",
+    "baseIri" : "http://www.w3.org/ns/dcat",
+    "range" : "37",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A URL of the resource that gives access to a distribution of the dataset.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "accessURL",
+      "en" : "Access URL"
+    },
+    "domain" : "25",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "42"
+  }, {
+    "iri" : "http://purl.org/dc/terms/accessRights",
+    "baseIri" : "http://purl.org/dc/terms",
+    "range" : "44",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A rights statement that concerns how the distribution is accessed.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "accessRights",
+      "en" : "Access rights"
+    },
+    "domain" : "7",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "43"
+  }, {
+    "iri" : "http://www.w3.org/ns/dcat#downloadURL",
+    "baseIri" : "http://www.w3.org/ns/dcat",
+    "range" : "29",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "The URL of the downloadable file in a given format.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "downloadURL",
+      "en" : "Download URL"
+    },
+    "domain" : "25",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "46"
+  }, {
+    "range" : "20",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "47"
+  }, {
+    "range" : "14",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "48"
+  }, {
+    "iri" : "http://data.europa.eu2sa/cssv#isMaintainedBy",
+    "baseIri" : "http://data.europa.eu2sa/cssv",
+    "range" : "4",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://data.europa.eu/w21/e1f84ab1-bad6-4e95-b37a-e54ba7dfc551",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Is maintained by",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "The Person, Organisation reponsible to update and maintain the specification.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isMaintainedBy"
+    },
+    "domain" : "2",
+    "attributes" : [ "object" ],
+    "id" : "49"
+  }, {
+    "iri" : "http://data.europa.eu2sa/cssv#combinedIn",
+    "inverse" : "51",
+    "baseIri" : "http://data.europa.eu2sa/cssv",
+    "range" : "20",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://data.europa.eu/w21/e1f84ab1-bad6-4e95-b37a-e54ba7dfc551",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Combined in",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A set of Specifications that are complementary and interrelated, forming a Family of Specifications.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "combinedIn"
+    },
+    "domain" : "2",
+    "attributes" : [ "object" ],
+    "id" : "50"
+  }, {
+    "iri" : "http://data.europa.eu2sa/cssv#isRecommendedBy",
+    "baseIri" : "http://data.europa.eu2sa/cssv",
+    "range" : "4",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://data.europa.eu/w21/e1f84ab1-bad6-4e95-b37a-e54ba7dfc551",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "undefined",
+        "value" : "Is recommended by",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "A link to any other person or organisation that recommends the specification.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isRecommendedBy",
+      "undefined" : "Is recommended by"
+    },
+    "domain" : "2",
+    "attributes" : [ "object" ],
+    "id" : "52"
+  }, {
+    "iri" : "http://purl.org/dc/terms/rights",
+    "baseIri" : "http://purl.org/dc/terms",
+    "range" : "45",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Information about rights held in and over the distribution.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "rights",
+      "en" : "Rights"
+    },
+    "domain" : "7",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "53"
+  }, {
+    "iri" : "https://schema.org/contactPoint",
+    "baseIri" : "https://schema.org",
+    "range" : "4",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A contact point for a person or organisation.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "contactPoint",
+      "en" : "Contact point"
+    },
+    "domain" : "55",
+    "attributes" : [ "external", "object" ],
+    "id" : "54"
+  }, {
+    "iri" : "http://data.europa.eu2sa/cssv#combines",
+    "baseIri" : "http://data.europa.eu2sa/cssv",
+    "range" : "2",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://data.europa.eu/w21/e1f84ab1-bad6-4e95-b37a-e54ba7dfc551",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Combines",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Whether a Family is a union of more than one Specifications.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "combines"
+    },
+    "domain" : "20",
+    "attributes" : [ "object" ],
+    "id" : "51"
+  }, {
+    "iri" : "http://purl.org/dc/terms/creator",
+    "baseIri" : "http://purl.org/dc/terms",
+    "range" : "4",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "An entity primarily responsible for making the resource.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "creator",
+      "en" : "Creator"
+    },
+    "domain" : "7",
+    "attributes" : [ "external", "object" ],
+    "id" : "57"
+  }, {
+    "iri" : "http://purl.org/dc/terms/title",
+    "baseIri" : "http://purl.org/dc/terms",
+    "range" : "33",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A name given to the Specification.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "title",
+      "en" : "Title"
+    },
+    "domain" : "2",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "58"
+  }, {
+    "iri" : "http://purl.org/dc/terms/type",
+    "baseIri" : "http://purl.org/dc/terms",
+    "range" : "38",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "The nature or genre of the resource.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "type",
+      "en" : "Type"
+    },
+    "domain" : "2",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "59"
+  } ]
+}
