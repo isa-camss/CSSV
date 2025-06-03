@@ -67,10 +67,10 @@ $(function(){
 <div style="display: flex; align-items: center; gap: 10px;">
    <h1 style="margin: 0;">Core Standards and Specifications Vocabulary</h1>
    <a href="#">
-     <img src="./image/CSSV.png" alt="CSSV Logo" style="width: 100px; height: auto;" />
+     <img src="image/CSSV.png" alt="CSSV Logo" style="width: 100px; height: auto;" />
    </a>
  </div>
-<h2>Release: 29/11/2024</h2>
+<h2>Release: 23/05/2025</h2>
 
 
 <dl>
@@ -79,14 +79,14 @@ $(function(){
 <dt>Latest version:</dt>
 <dd><a href="http://data.europa.eu2sa/cssv#">http://data.europa.eu2sa/cssv#</a></dd>
 <dt>Revision:</dt>
-<dd>1.4.0</dd>
+<dd>1.4.1</dd>
 <dt>See also:</dt>
 <dd><a href="https://github.com/isa-camss/CSSV">https://github.com/isa-camss/CSSV</a></dd><dd><a href="https://joinup.ec.europa.eu/collection/common-assessment-method-standards-and-specifications-camss/solution/core-standards-and-specifications-vocabulary-cssv">https://joinup.ec.europa.eu/collection/common-assessment-method-standards-and-specifications-camss/solution/core-standards-and-specifications-vocabulary-cssv</a></dd>
 
 <dt>Download serialization:</dt><dd><span><a href="ontology.jsonld" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.owl" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License:</dt><dd><a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank"><img src="https://img.shields.io/badge/License-Creative%20Commons%204.0-blue.svg" alt="http://creativecommons.org/licenses/by-sa/4.0/" /></a>
 </dd>
 <!-- <dt>Evaluation:</dt><dd><a href="OOPSevaluation/oopsEval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd> --><dt>Cite as:</dt>
-<dd> Core Standards and Specifications Vocabulary. Revision: 1.4.0. Retrieved from: http://data.europa.eu2sa/cssv#</dd>
+<dd> Core Standards and Specifications Vocabulary. Revision: 1.4.1. Retrieved from: http://data.europa.eu2sa/cssv#</dd>
 </dl>
 
 <hr/>
@@ -107,7 +107,7 @@ $(function(){
        </p>
        
        <p>
-         The methodological approach followed for the development of the CAV reuses the following ontologies and vocabularies:
+         The methodological approach followed for the development of the CSSV reuses the following ontologies and vocabularies:
        </p>
        <ul>
          <li>Data Catalogue Vocabulary (DCAT)</li>
@@ -154,7 +154,7 @@ $(function(){
 <span class="markdown">
 This ontology has the following classes and properties.</span>
 <div style="text-align: center;">
-   <img src="./image/CSSV_UML_v1.4.0.png" alt="CSSV UML" style="width: 80%; max-width: 1200px; height: auto;" />
+   <img src="image/CSSV_UML_v1.4.0.png" alt="CSSV UML" style="width: 80%; max-width: 1200px; height: auto;" />
  </div>
 <h4>Classes</h4>
 <ul xmlns:widoco="https://w3id.org/widoco/vocab#"
@@ -824,20 +824,6 @@ This section provides details for each class and property defined by Core Standa
    </dd>
   </dl>
   <div class="description">
-   <dl>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="#Specification" title="http://data.europa.eu2sa/cssv#Specification">Specification</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>
-     has range
-    </dt>
-    <dd>
-     <a href="#Specification" title="http://data.europa.eu2sa/cssv#Specification">Specification</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-   </dl>
   </div>
  </div>
  <div class="entity" id="http://www.w3.org/ns/dcat#theme">
@@ -881,23 +867,9 @@ This section provides details for each class and property defined by Core Standa
   <h3>Access rights<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/dc/terms/accessRights</p>
   <div class="comment">
-   <span class="markdown">A rights statement that concerns how the distribution is accessed.</span>
+   <span class="markdown">Information about who can access the resource or an indication of its security status.</span>
   </div>
   <div class="description">
-   <dl>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="http://www.w3.org/ns/dcat#Resource" target="_blank" title="http://www.w3.org/ns/dcat#Resource">Resource</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>
-     has range
-    </dt>
-    <dd>
-     <a href="http://www.w3.org/2000/01/rdf-schema#Literal" target="_blank" title="http://www.w3.org/2000/01/rdf-schema#Literal">Literal</a>
-    </dd>
-   </dl>
   </div>
  </div>
  <div class="entity" id="http://www.w3.org/ns/dcat#accessURL">
@@ -989,16 +961,10 @@ This section provides details for each class and property defined by Core Standa
   <h3>description<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/dc/terms/description</p>
   <div class="comment">
-   <span class="markdown">Brief description of the resource.</span>
+   <span class="markdown">An account of the resource.</span>
   </div>
   <div class="description">
    <dl>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="#Specification" title="http://data.europa.eu2sa/cssv#Specification">Specification</a> <sup class="type-c" title="class">c</sup>
-    </dd>
     <dt>
      has range
     </dt>
@@ -1035,16 +1001,10 @@ This section provides details for each class and property defined by Core Standa
   <h3>identifier<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/dc/terms/identifier</p>
   <div class="comment">
-   <span class="markdown">A unique identifier of the resource being described or cataloged.</span>
+   <span class="markdown">An unambiguous reference to the resource within a given context.</span>
   </div>
   <div class="description">
    <dl>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="#Specification" title="http://data.europa.eu2sa/cssv#Specification">Specification</a> <sup class="type-c" title="class">c</sup>
-    </dd>
     <dt>
      has range
     </dt>
@@ -1058,23 +1018,9 @@ This section provides details for each class and property defined by Core Standa
   <h3>license<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/dc/terms/license</p>
   <div class="comment">
-   <span class="markdown">A legal document under which the resource is made available.</span>
+   <span class="markdown">A legal document giving official permission to do something with the resource.</span>
   </div>
   <div class="description">
-   <dl>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="http://www.w3.org/ns/dcat#Resource" target="_blank" title="http://www.w3.org/ns/dcat#Resource">Resource</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>
-     has range
-    </dt>
-    <dd>
-     <a href="http://www.w3.org/2000/01/rdf-schema#Literal" target="_blank" title="http://www.w3.org/2000/01/rdf-schema#Literal">Literal</a>
-    </dd>
-   </dl>
   </div>
  </div>
  <div class="entity" id="http://purl.org/dc/terms/rights">
@@ -1084,20 +1030,6 @@ This section provides details for each class and property defined by Core Standa
    <span class="markdown">Information about rights held in and over the distribution.</span>
   </div>
   <div class="description">
-   <dl>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="http://www.w3.org/ns/dcat#Resource" target="_blank" title="http://www.w3.org/ns/dcat#Resource">Resource</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>
-     has range
-    </dt>
-    <dd>
-     <a href="http://www.w3.org/2000/01/rdf-schema#Literal" target="_blank" title="http://www.w3.org/2000/01/rdf-schema#Literal">Literal</a>
-    </dd>
-   </dl>
   </div>
  </div>
  <div class="entity" id="http://www.w3.org/ns/dcat#theme">
@@ -1124,16 +1056,10 @@ This section provides details for each class and property defined by Core Standa
   <h3>title<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/dc/terms/title</p>
   <div class="comment">
-   <span class="markdown">A name given to the Specification.</span>
+   <span class="markdown">A name given to the resource.</span>
   </div>
   <div class="description">
    <dl>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="#Specification" title="http://data.europa.eu2sa/cssv#Specification">Specification</a> <sup class="type-c" title="class">c</sup>
-    </dd>
     <dt>
      has range
     </dt>
@@ -1150,20 +1076,6 @@ This section provides details for each class and property defined by Core Standa
    <span class="markdown">The nature or genre of the resource.</span>
   </div>
   <div class="description">
-   <dl>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="#Specification" title="http://data.europa.eu2sa/cssv#Specification">Specification</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>
-     has range
-    </dt>
-    <dd>
-     <a href="http://www.w3.org/2004/02/skos/core#Concept" target="_blank" title="http://www.w3.org/2004/02/skos/core#Concept">Concept</a> <sup class="type-ep" title="external property">ep</sup>
-    </dd>
-   </dl>
   </div>
  </div>
  <div class="entity" id="http://www.w3.org/ns/dcat#version">
@@ -1181,20 +1093,6 @@ This section provides details for each class and property defined by Core Standa
    </dd>
   </dl>
   <div class="description">
-   <dl>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="#Specification" title="http://data.europa.eu2sa/cssv#Specification">Specification</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>
-     has range
-    </dt>
-    <dd>
-     <a href="http://www.w3.org/2000/01/rdf-schema#Literal" target="_blank" title="http://www.w3.org/2000/01/rdf-schema#Literal">Literal</a>
-    </dd>
-   </dl>
   </div>
  </div>
 </div><div id="legend">
