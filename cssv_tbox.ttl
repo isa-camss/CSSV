@@ -1,3 +1,4 @@
+@prefix : <http://data.europa.eu/2sa/cssv#> .
 @prefix cc: <http://creativecommons.org/ns#> .
 @prefix dc: <http://www.omg.org/spec/UML/20131001/UMLDC> .
 @prefix dct: <http://purl.org/dc/terms/> .
@@ -8,126 +9,97 @@
 @prefix sch: <https://schema.org/> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix cssv: <http://data.europa.eu2sa/cssv#> .
+@prefix cssv: <http://data.europa.eu/2sa/cssv#> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix prof: <https://www.w3.org/TR/dx-prof/#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
+@base <http://data.europa.eu/2sa/cssv#> .
 
-<http://data.europa.eu2sa/cssv#> rdf:type owl:Ontology ;
+<http://data.europa.eu2sa/cssv> a owl:Ontology ;
                                   owl:versionIRI cssv: ;
                                   owl:imports dct: ,
                                     rdfs: ,
                                     skos: ,
                                     dcat: ,
-                                    foaf: 
+                                    foaf: ,
                                     org: ,
                                     sch: ,
                                     prof: ;
-                                  cc:attributionName "European Commission" ;
+                                  cc:attributionName "European Commission"@en ;
                                   dct:description "This module provides the definitions for the Core Standards and Specifications Vocabulary."@en ;
-                                  dct:date "2025-05-23" ;
-                                  dct:license <http://creativecommons.org/licenses/by-sa/4.0/> ;
-                                  dct:mediator [ foaf:name "Common Assessment Method for Standards and Specifications (CAMSS)" ;
-                                                 foaf:homepage "https://interoperable-europe.ec.europa.eu/collection/common-assessment-method-standards-and-specifications-camss"
-                                               ] ;
+                                  dct:issued "2025-10-31"^^xsd:date ;
+                                  dct:created "2020-02-04"^^xsd:date ;
+                                  dct:publisher "European Commission" ;
+                                  dct:license "http://creativecommons.org/licenses/by-sa/4.0/" ;
                                   dct:title "Core Standards and Specifications Vocabulary"@en ;
                                   vann:preferredNamespacePrefix "cssv" ;
-                                  vann:preferredNamespaceUri "http://data.europa.eu2sa/cssv#" ;
-                                  rdfs:label "Core Standards and Specifications Vocabulary" ;
-                                  rdfs:seeAlso <https://github.com/isa-camss/CSSV> ,
-                                               <https://joinup.ec.europa.eu/collection/common-assessment-method-standards-and-specifications-camss/solution/core-standards-and-specifications-vocabulary-cssv> ;
-                                  owl:versionInfo "1.4.1" ;
-                                  skos:note "This file has been generated with Protégé." ;
-                                  foaf:maker [ rdf:type foaf:Person ;
-                                               foaf:firstName "Common Assessment Method for Standards and Specifications (CAMSS)"
-                                              ] .
+                                  vann:preferredNamespaceUri "http://data.europa.eu/2sa/cssv#" ;
+                                  rdfs:label "Core Standards and Specifications Vocabulary"@en ;
+                                  rdfs:seeAlso <https://github.com/isa-camss/CSSV> ;
+                                  owl:versionInfo "2.0.0" ;
+                                  dct:creator "Common Assessment Method for Standards and Specifications (CAMSS)"@en .
 
 #################################################################
 #    Object Properties
 #################################################################
 
-###  http://data.europa.eu2sa/cssv#combinedIn
-cssv:combinedIn rdf:type owl:ObjectProperty ;
-                owl:inverseOf cssv:combines ;
-                rdfs:domain cssv:Specification ;
-                rdfs:range cssv:Family ;
+###  http://data.europa.eu/2sa/cssv#combinedIn
+cssv:combinedIn a owl:ObjectProperty ;
                 rdfs:comment "A set of Specifications that are complementary and interrelated, forming a Family of Specifications."@en ;
                 rdfs:isDefinedBy <http://data.europa.eu/w21/e1f84ab1-bad6-4e95-b37a-e54ba7dfc551> ;
                 skos:definition "A set of Specifications that are complementary and interrelated, forming a Family of Specifications."@en ;
                 skos:prefLabel "Combined in"@en .
 
 
-###  http://data.europa.eu2sa/cssv#combines
-cssv:combines rdf:type owl:ObjectProperty ;
-              rdfs:domain cssv:Family ;
-              rdfs:range cssv:Specification ;
+###  http://data.europa.eu/2sa/cssv#combines
+cssv:combines a owl:ObjectProperty ;
               rdfs:comment "Whether a Family is a union of more than one Specifications."@en ;
               rdfs:isDefinedBy <http://data.europa.eu/w21/e1f84ab1-bad6-4e95-b37a-e54ba7dfc551> ;
               skos:definition "Whether a Family is a union of more than one Specifications."@en ;
               skos:prefLabel "Combines"@en .
 
 
-###  http://data.europa.eu2sa/cssv#configuredIn
-cssv:configuredIn rdf:type owl:ObjectProperty ;
-                  owl:inverseOf cssv:configures ;
-                  rdfs:domain cssv:Specification ;
-                  rdfs:range cssv:ApplicationProfile ;
+###  http://data.europa.eu/2sa/cssv#configuredIn
+cssv:configuredIn a owl:ObjectProperty ;
                   rdfs:comment "A set of Specifications potentially for a given use case or policy domain that are aggregated in an ApplicationProfile."@en ;
                   rdfs:isDefinedBy <http://data.europa.eu/w21/e1f84ab1-bad6-4e95-b37a-e54ba7dfc551> ;
                   skos:definition "A set of Specifications potentially for a given use case or policy domain that are aggregated in an ApplicationProfile."@en ;
                   skos:prefLabel "Configured in"@en .
 
 
-###  http://data.europa.eu2sa/cssv#configures
-cssv:configures rdf:type owl:ObjectProperty ;
-                rdfs:domain cssv:ApplicationProfile ;
-                rdfs:range cssv:Specification ;
+###  http://data.europa.eu/2sa/cssv#configures
+cssv:configures a owl:ObjectProperty ;
                 rdfs:comment "Whether an Application Profile design or adapts a Specification for a specific purpose."@en ;
                 rdfs:isDefinedBy <http://data.europa.eu/w21/e1f84ab1-bad6-4e95-b37a-e54ba7dfc551> ;
                 skos:definition "Whether an Application Profile design or adapts a Specification for a specific purpose."@en ;
                 skos:prefLabel "Configures"@en .
 
-
-###  http://data.europa.eu2sa/cssv#isAspectOf
-cssv:isAspectOf rdf:type owl:ObjectProperty ;
-                rdfs:domain cssv:ApplicationProfile ;
-                rdfs:range prof:Profile ;
-                rdfs:comment "ApplicationProfile is a part of a Profile."@en ;
-                rdfs:isDefinedBy <http://data.europa.eu/w21/e1f84ab1-bad6-4e95-b37a-e54ba7dfc551> ;
-                skos:definition "ApplicationProfile is a part of a Profile."@en ;
-                skos:prefLabel "Is aspect of"@en .
-
-###  http://data.europa.eu2sa/cssv#isMaintainedBy
-cssv:isMaintainedBy rdf:type owl:ObjectProperty ;
-                    rdfs:domain cssv:Specification ;
-                    rdfs:range foaf:Agent ;
+###  http://data.europa.eu/2sa/cssv#isMaintainedBy
+cssv:isMaintainedBy a owl:ObjectProperty ;
                     rdfs:comment "The Person, Organisation reponsible to update and maintain the specification."@en ;
                     rdfs:isDefinedBy <http://data.europa.eu/w21/e1f84ab1-bad6-4e95-b37a-e54ba7dfc551> ;
                     skos:definition "The Person, Organisation reponsible to update and maintain the specification."@en ;
                     skos:prefLabel "Is maintained by"@en .
 
 
-###  http://data.europa.eu2sa/cssv#isRecommendedBy
-cssv:isRecommendedBy rdf:type owl:ObjectProperty ;
-                     rdfs:domain cssv:Specification ;
-                     rdfs:range foaf:Agent ;
+###  http://data.europa.eu/2sa/cssv#isRecommendedBy
+cssv:isRecommendedBy a owl:ObjectProperty ;
                      rdfs:comment "A link to any other person or organisation that recommends the specification." ;
                      rdfs:isDefinedBy <http://data.europa.eu/w21/e1f84ab1-bad6-4e95-b37a-e54ba7dfc551> ;
                      rdfs:label "Is recommended by" ;
                      skos:definition "A link to any other person or organisation that recommends the specification." ;
                      skos:prefLabel "Is recommended by" .
 
+
 #################################################################
 #    Data properties
 #################################################################
 
-###  http://data.europa.eu2sa/cssv#acronym
-cssv:acronym rdf:type owl:DatatypeProperty ;
-             rdfs:domain cssv:Specification ;
-             rdfs:range rdfs:Literal ;
+###  http://data.europa.eu/2sa/cssv#acronym
+cssv:acronym a owl:DatatypeProperty ;
              rdfs:comment "Abbreviation of the specification."@en ;
              rdfs:isDefinedBy cssv: ;
              skos:altLabel "Has acronym"@en ;
@@ -135,10 +107,8 @@ cssv:acronym rdf:type owl:DatatypeProperty ;
              skos:prefLabel "Acronym"@en .
 
 
-###  http://data.europa.eu2sa/cssv#alternative
-cssv:alternative rdf:type owl:DatatypeProperty ;
-                 rdfs:domain cssv:Specification ;
-                 rdfs:range rdfs:Literal ;
+###  http://data.europa.eu/2sa/cssv#alternative
+cssv:alternative a owl:DatatypeProperty ;
                  rdfs:comment "The alternative name of the specification."@en ;
                  rdfs:isDefinedBy cssv: ;
                  skos:definition "The alternative name of the specification."@en ;
@@ -149,46 +119,36 @@ cssv:alternative rdf:type owl:DatatypeProperty ;
 #    Classes
 #################################################################
 
-###  http://data.europa.eu2sa/cssv#ApplicationProfile
-cssv:ApplicationProfile rdf:type owl:Class ;
+###  http://data.europa.eu/2sa/cssv#ApplicationProfile
+cssv:ApplicationProfile a owl:Class ;
                         rdfs:subClassOf cssv:Specification ;
-                        owl:disjointWith cssv:Family ,
-                                         cssv:Standard ;
                         rdfs:comment "An application profile “customises one or more existing specifications potentially for a given use case or a policy domain adding an end to end narrative describing and ensuring the interoperability of its underlying specification(s)”."@en ;
                         rdfs:isDefinedBy <http://data.europa.eu/w21/e1f84ab1-bad6-4e95-b37a-e54ba7dfc551> ;
                         skos:definition "An application profile “customises one or more existing specifications potentially for a given use case or a policy domain adding an end to end narrative describing and ensuring the interoperability of its underlying specification(s)”."@en ;
                         skos:prefLabel "Application Profile"@en .
 
 
-###  http://data.europa.eu2sa/cssv#Family
-cssv:Family rdf:type owl:Class ;
+###  http://data.europa.eu/2sa/cssv#Family
+cssv:Family a owl:Class ;
             rdfs:subClassOf cssv:Specification ;
-            owl:disjointWith cssv:Standard ;
             rdfs:comment "A collection of interrelated and/or complementary specifications, standards or application profiles and the explanation of how they are combined, used or both."@en ;
             rdfs:isDefinedBy <http://data.europa.eu/w21/e1f84ab1-bad6-4e95-b37a-e54ba7dfc551> ;
             skos:definition "A collection of interrelated and/or complementary specifications, standards or application profiles and the explanation of how they are combined, used or both."@en ;
             skos:prefLabel "Family"@en .
 
 
-###  http://data.europa.eu2sa/cssv#Specification
-cssv:Specification rdf:type owl:Class ;
+###  http://data.europa.eu/2sa/cssv#Specification
+cssv:Specification a owl:Class ;
                    rdfs:subClassOf dcat:Dataset ;
-                   rdfs:subClassOf [
-                        a owl:Restriction ;
-                        owl:onProperty dcat:previousVersion ;
-                        owl:allValuesFrom cssv:Specification ;
-                        owl:someValuesFrom cssv:Specification
-                    ] ;
                    rdfs:comment "Document with normative guidelines or characteristics that can be used consistently to ensure that materials, products, processes and services conform to one or a set of requirements (ISO). Specifications are the cornerstone of interoperability, as they set the grounds for the design and development of interoperable and reusable solutions based in common services at the lowest level."@en ;
                    rdfs:isDefinedBy <http://data.europa.eu/w21/e1f84ab1-bad6-4e95-b37a-e54ba7dfc551> ;
                    skos:definition "Precise requirements that are needed for the implementation of a solution. A specification is not necessarily a standard."@en ;
                    skos:prefLabel "Specification"@en .
 
 
-###  http://data.europa.eu2sa/cssv#Standard
-cssv:Standard rdf:type owl:Class ;
-              rdfs:subClassOf dct:Standard ,
-                              cssv:Specification ;
+###  http://data.europa.eu/2sa/cssv#Standard
+cssv:Standard a owl:Class ;
+              rdfs:subClassOf cssv:Specification ;
               rdfs:comment "Specification that has reached a certain maturity and widespread adoption and potentially endorsed."@en ;
               rdfs:isDefinedBy <http://data.europa.eu/w21/e1f84ab1-bad6-4e95-b37a-e54ba7dfc551> ;
               skos:definition "Specification that has reached a certain maturity and widespread adoption and potentially endorsed."@en ;
