@@ -10,9 +10,7 @@
 <link rel="stylesheet" href="resources/light.css" media="(prefers-color-scheme: light)"/>
 <link rel="stylesheet" href="resources/slider.css" media="screen"/>
 <meta name="color-scheme" content="dark light">
-<script type="module" src="resources/dark-mode-toggle.mjs"></script><div class="darkmode">
-	<dark-mode-toggle class="slider"></dark-mode-toggle>
-</div>
+<script type="module" src="resources/dark-mode-toggle.mjs"></script>
  <title>Core Standards and Specifications Vocabulary</title>
 
 
@@ -62,15 +60,18 @@ $(function(){
 
 <body>
 <div class="container">
-<div class="head">
-<div style="float:right">language <a href="index-en.html"><b>en</b></a> </div>
+<body>
+<div class="container">
+<div class="darkmode" style="position: absolute; top: 10px; right: 10px;">
+   <dark-mode-toggle class="slider"></dark-mode-toggle>
+</div>
 <div style="display: flex; align-items: center; gap: 10px;">
    <h1 style="margin: 0;">Core Standards and Specifications Vocabulary</h1>
    <a href="#">
      <img src="image/CSSV.png" alt="CSSV Logo" style="width: 100px; height: auto;" />
    </a>
  </div>
-<h2>Release: 23/05/2025</h2>
+<h2>Release: 31/10/2025</h2>
 
 
 <dl>
@@ -79,21 +80,21 @@ $(function(){
 <dt>Latest version:</dt>
 <dd><a href="http://data.europa.eu2sa/cssv#">http://data.europa.eu2sa/cssv#</a></dd>
 <dt>Revision:</dt>
-<dd>1.4.1</dd>
+<dd>2.0.0</dd>
 <dt>See also:</dt>
 <dd><a href="https://github.com/isa-camss/CSSV">https://github.com/isa-camss/CSSV</a></dd><dd><a href="https://joinup.ec.europa.eu/collection/common-assessment-method-standards-and-specifications-camss/solution/core-standards-and-specifications-vocabulary-cssv">https://joinup.ec.europa.eu/collection/common-assessment-method-standards-and-specifications-camss/solution/core-standards-and-specifications-vocabulary-cssv</a></dd>
 
 <dt>Download serialization:</dt><dd><span><a href="ontology.jsonld" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.owl" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License:</dt><dd><a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank"><img src="https://img.shields.io/badge/License-Creative%20Commons%204.0-blue.svg" alt="http://creativecommons.org/licenses/by-sa/4.0/" /></a>
 </dd>
 <!-- <dt>Evaluation:</dt><dd><a href="OOPSevaluation/oopsEval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd> --><dt>Cite as:</dt>
-<dd> Core Standards and Specifications Vocabulary. Revision: 1.4.1. Retrieved from: http://data.europa.eu2sa/cssv#</dd>
+<dd> Core Standards and Specifications Vocabulary. Revision: 2.0.0. Retrieved from: http://data.europa.eu2sa/cssv#</dd>
 </dl>
 
 <hr/>
 </div>
 <div class="status">
 <div>
-<span>CSSV 1.4.1</span>
+<span>CSSV 2.0.0</span>
 </div>
 </div>     <div id="abstract"><h2>Abstract</h2><span class="markdown">
    CSSV is a vocabulary describing standards and specifications used in software development. It is used by ELIS, the EIRA Library of Interoperability Specifications. It is an European Commission solution.</span>
@@ -123,7 +124,6 @@ $(function(){
 <h3 id="ns" class="list">Namespace declarations</h3>
 <div id="ns" align="center">
 <table>
-<caption> <a href="#ns"> Table 1</a>: Namespaces used in the document </caption>
 <tbody>
 <tr><td><b>cc</b></td><td>&lt;http://creativecommons.org/ns#&gt;</td></tr>
 <tr><td><b>cssv</b></td><td>&lt;http://data.europa.eu2sa/cssv#&gt;</td></tr>
@@ -144,6 +144,7 @@ $(function(){
 <tr><td><b>xsd</b></td><td>&lt;http://www.w3.org/2001/XMLSchema#&gt;</td></tr>
 </tbody>
 </table>
+<caption> <a href="#ns"> Table 1</a>: Namespaces used in the document </caption>
 </div>
 </div>
 </div>
@@ -154,8 +155,10 @@ $(function(){
 <span class="markdown">
 This ontology has the following classes and properties.</span>
 <div style="text-align: center;">
-   <img src="image/CSSV_UML_v1.4.1.png" alt="CSSV UML" style="width: 80%; max-width: 1200px; height: auto;" />
- </div>
+   <img src="image/CSSV_UML_v2.0.0.png" alt="CSSV UML" style="width: 80%; max-width: 1200px; height: auto;" /> <br><br>
+   <caption>Figure 1</a>: The Core Standards and Specifications Vocabulary </caption>
+</div>
+ 
 <h4>Classes</h4>
 <ul xmlns:widoco="https://w3id.org/widoco/vocab#"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -197,9 +200,6 @@ This ontology has the following classes and properties.</span>
       <a href="#http://www.w3.org/ns/dcat#distribution" title="http://www.w3.org/ns/dcat#distribution">
          <span>distribution</span>
       </a>
-   </li>
-   <li>
-      <a href="#isAspectOf" title="http://data.europa.eu2sa/cssv#isAspectOf">Is aspect of</a>
    </li>
    <li>
       <a href="#isMaintainedBy" title="http://data.europa.eu2sa/cssv#isMaintainedBy">Is maintained by</a>
@@ -277,46 +277,58 @@ This ontology has the following classes and properties.</span>
     <div id="description"><h2 id="desc" class="list">Core Standards and Specifications Vocabulary: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 
       <p>
-         The main class of the CSSV model is the “Specification”. A conceptual approach to define Specification is by aligning with the one undertaken by Joinup.
+         The main class of the CSSV model is the “Specification”. As represented in the conceptual model of the CSSV, a Specification is an asset, since it inherits from the <code>dcat:Dataset</code>, which inherits from the <code>dcat:Resource</code>, defined as ‘a collection of data published or curated by a single agent and made available in one or more representations.’. A Specification can serve to multiple function, not merely limited to semantic assets (as ADMS defines), but also describes requirements; and these requirements, depending on their purpose and context of use, can converge into a Standard, an Application Profile, a Family or a collection of other specifications.
        </p>
        
        <p>
-         As represented in the conceptual model of the CSSV, a Specification is an asset, since it inherits from the <code>dcat:Dataset</code>, which inherits from the <code>dcat:Resource</code>. A Specification, besides a document, can be a Standard, an Application Profile, and/or a Family or a collection of other specifications. The CSSV model defines:
+         The CSSV model defines the Specification and three additional specialisations:
        </p>
        
        <ul>
-         <li><strong>Specification</strong>, which describes a document with normative guidelines or characteristics that can be used consistently to ensure that materials, products, processes and services conform to one or a set of requirements (ISO). Specifications are the cornerstone of interoperability, as they set the grounds for the design and development of interoperable and reusable solutions based in common services at the lowest level.</li>
-         <li><strong>A Standard</strong> as a specification that has reached a certain maturity and widespread adoption and potentially endorsed, meaning that it is recognized and supported by a community or sanctioned by an authority.</li>
-         <li><strong>An Application Profile</strong> as customization of one or more existing specifications potentially for a given use case or a policy domain adding an end-to-end narrative describing and ensuring the interoperability of its underlying specification(s). By customization, we understand the “addition of more specificity by identifying mandatory, recommended, and optional elements, as well as by defining controlled vocabularies to be employed”.</li>
-         <li><strong>A Family</strong> as a collection of interrelated and/or complementary specifications, standards, or application profiles and the explanation of how they are combined, used, or both.</li>
+         <li><strong>Specification</strong>, which describes precise requirements that are needed for the implementation of a solution. A specification is not
+         necessarily a standard.</li> <br>
+         <li><strong>A Standard</strong> as a Specification that has reached a certain maturity and widespread adoption and potentially endorsed, meaning that is
+         recognised and supported by a community or sanctioned by an authority. Normally, a Standard is a Specification that is
+         part of a interoperable solution implementation.</li><br>
+         <li><strong>An Application Profile</strong> Profile as customisation of one or more existing specifications potentially for a given use case or a policy domain
+         adding an end-to-end narrative describing and ensuring the interoperability of its underlying specification(s). By
+         customisation, we understand the “addition of more specificity by identifying mandatory, recommended, and optional
+         elements, as well as by defining controlled vocabularies to be employed”.</li><br>
+         <li><strong>A Family</strong> as a collection of interrelated and/or complementary specifications, standards or application profiles and the
+         explanation of how they are combined, used, or both.</li><br>
        </ul>
+
+       <p>
+         Optionally, the use of the dct:type property in cssv:Specification indicates the “type” of a specification, whether it represents a data specification, data profile, data artifact, or reference model etc. The <code>dct:type</code> property, as defined in the DCT vocabulary, may serve to complement and classify a specification according to its particular kind, function,
+         or purpose. There exist referenced codelists provided by ADMS-AP and the Publications Office of the EU (PO) that may be reused.
+      </p>
+
+      <p>
+         When one of the specialisations of Specification does not adapt to a specific context and needs to work in conjunction with a other Specifications, the use of a collection of Specifications is highly recommended through the <code>dcat:DatasetSeries</code>. The <code>dcat:DatasetSeries</code> class represents a collection of datasets that are published separately, but share some characteristics that group them. The specialisation of a Specification are linked to other Specifications by using the property dcat:inSeries (being <code>dcat:hasPart</code> the inverse relation to it). Note that a collection of Specifications can also be hierarchical, and such collection can be a member of another collection of Specifications.
+      </p>
        
        <p>
-         A collection of Specifications differs from a Family of Specifications in the fact that the relationship amongst themselves is not explicit. In the CSSV model, a collection of Specifications is an Asset that is related to other Assets and that is realized as an individual of a Specification. In other words, a Specification that reuses the <code>dct:relation</code> property of its base class <code>dcat:Resource</code>.
+        The use of <code>dcat:DatasetSeries</code> is not always limited to representing a specialisation of a Specification, it can also be applied to a Specification. Unlike a Family of Specifications, the Specifications within a collection are grouped without requiring an explicit relationship among them, allowing for a more flexible and loosely coupled collection. There are occasions where collections of Specifications are applied to a context or a domain in a specific “configuration”. Thus application profiles may conform sets of “themed” specifications. For this, the CSSV model uses the property “configures/includedIn” and the <code>dcat:theme</code> property pointing at a skos:Concept (i.e. a code, see the DCAT model above). It is important to note that the descendants of the specifications are all “disjoint”. Thus, Application Profiles and Families are Specifications that refer to or put together with other Specifications and/or Standards, but cannot themselves be considered Standards. This entails that an individual of an application profile or family cannot be a standard, but does not preclude that, in time, the application profile or the family can become standards. If that were the case then individuals of <code>cssv:Standard</code> would be created to represent the standardisation of those specifications that are Application Profiles and Families.
        </p>
        
        <p>
-         There are occasions where collections of Specifications are applied to a context or a domain in a specific “configuration”. Thus, application profiles may conform sets of “themed” specifications. For this, the CSSV model uses the property “<code>configures/includedIn</code>” and the <code>dcat:theme</code> property pointing at a <code>skos:Concept</code> (i.e. a code, see the DCAT model above).
+         Another aspect to consider is the evolution of a Specification. One Specification, in time, may become a Standard. In these cases, the authority (author) that defined the Specification may be different from the one that creates and maintains artefacts out of the Standard. Think, for example, of the artefacts produced, maintained and distributed by the Publications Office of the EU (OP) in its site EU Vocabularies: all these artefacts are defined by other authorities (e.g. the ISO), whilst the artefacts (e.g. the controlled vocabularies expressed in SKOS, XML, GeneriCode, XML, etc.) are supplied by the OP. For this, the CSSV uses the properties <code>dct:creator</code> and <code>cssv:isMaintainedBy</code>; where <code>dct:creator</code> (as for <code>dct:publisher</code>) DCT associates a URL as property range.
        </p>
        
        <p>
-         It is important to note that the descendants of the specifications are all “disjoint”. Thus, Application Profiles and Families are Specifications that refer to or put together with other Specifications and/or Standards, but cannot themselves be considered Standards.
+         The maintainer of a Specification is a <code>foaf:Agent</code>, which allows great flexibility to the CSSV model as <code>foaf:Agent</code> is the base class in many ontologies. Moreover, a <code>foaf:Agent</code> may represent a member state that recommends the a Specification; the property cssv:isRecommendedBy is used for this end. The CSSV puts forward the reuse of the Core Person Vocabulary (CPV) and the Organization Ontology (W3C Org) for this purpose. Also, the <code>foaf:Agent</code> also provides the contact point of the specification.
        </p>
        
        <p>
-         One Specification, in time, may become a Standard. In these cases, the authority (author) that defined the Specification may be different from the one that creates and maintains artifacts out of the Standard. Think, for example, of the artifacts produced, maintained, and distributed by the Publications Office of the European Union (OP) in its site EU Vocabularies: all these artifacts are defined by other authorities (e.g. the ISO), whilst the artifacts (e.g. the controlled vocabularies expressed in SKOS, XML, GeneriCode, XML, etc.) are supplied by the OP. For this, the CSSV uses the properties <code>dct:creator</code> and <code>cssv:isMaintainedBy</code>. Additionally, the <code>dcat:Dataset</code> has the property <code>dct:type</code> that can be used to state that the Specification is of type “definition, artifact, or other”. The DCAT vocabulary also provides the possibility of expressing who is responsible for the publication of the definition or the artifacts via the property <code>dct:publisher</code> (see the DCAT model).
+         Concerning the intellectual property rights (IPR), they are covered by the fact that a Specification which is a <code>dcat:Resource</code> and it allows to define the <code>dct:license</code> and <code>dct:rights</code>. Further extensions of licencing matters and derivation of IPR can be modelled using PROV-O.
        </p>
        
        <p>
-         The maintainer or publisher of a Specification is a <code>foaf:Agent</code>, which allows great flexibility to the CSSV model as <code>foaf:Agent</code> is the base class in many ontologies. Moreover, a <code>foaf:Agent</code> may represent a member state that recommends the Specification; the property <code>cssv:isRecommendedBy</code> is introduced for this end. The CSSV puts forward the reuse of the Core Person Vocabulary (ISA2 CPV) and the Organization Ontology (W3C Org) for this purpose. Also, the <code>foaf:Agent</code> provides the contact point of the specification.
+        A new shift to CSSV 2.0 is the discontinuation of <code>cssv:ApplicationProfile</code> as a subclass or direct specialisation of <code>prof:Profile</code>. While this interpretation is technically compatible with the definition provided in the PROF specification, where a profile is understood as, “a specification that constrains, extends, combines, or provides guidance or explanations about the usage of other specifications”,  it surpasses the broader field of application foreseen for the CSSV. To overcome this, the CSSV introduces a more flexible and semantically neutral mechanism based on <code>dcat:qualifiedRelation</code>, allowing relationships between Specifications and a <code>prof:Profile</code>. This approach replaces the previous direct link between <code>prof:Profile</code> and <code>cssv:ApplicationProfile</code>, ensuring that the connection remains optional and context-driven rather than structural. This will avoid to not enforce to many constrains and links that are not semantically necessary. Since ideally CSSV wants to relate concepts that are similar to each other without enforcing how things are used, nor creating unnecessary restrictions  for existing ontologies. To ensure clarity, the use of <code>dct:relation</code> within each <code>dcat:qualifiedRelation</code> instance is made mandatory.
        </p>
-       
+            
        <p>
-         Concerning the Intellectual Property Rights, they are covered by the fact that a specification, which is a <code>dcat:Resource</code>, allows defining the <code>dct:license</code> and <code>dct:rights</code>.
-       </p>
-       
-       <p>
-         Finally, note that all the descendants of the <code>ccsv:Specification</code> are disjoint. This entails that an individual of an application profile or family cannot be a standard, but does not preclude that, in time, the application profile or the family can become standards. If that were the case, then individuals of <code>ccsv:Standard</code> would be created to represent the standardization of those specifications that are application profiles and families.
+         In summary, this new structure ensures conceptual clarity and traceability within the CSSV model, allowing consistent classification and evolution of specifications across different levels of maturity and reuse.
        </p>
    
 
@@ -356,7 +368,7 @@ This section provides details for each class and property defined by Core Standa
     is in domain of
    </dt>
    <dd>
-    <a href="#configures" title="http://data.europa.eu2sa/cssv#configures">Configures</a> <sup class="type-op" title="object property">op</sup>, <a href="#isAspectOf" title="http://data.europa.eu2sa/cssv#isAspectOf">Is aspect of</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#configures" title="http://data.europa.eu2sa/cssv#configures">Configures</a> <sup class="type-op" title="object property">op</sup>
    </dd>
    <dt>
     is in range of
@@ -473,7 +485,7 @@ This section provides details for each class and property defined by Core Standa
     has super-classes
    </dt>
    <dd>
-    <a href="#Specification" title="http://data.europa.eu2sa/cssv#Specification">Specification</a> <sup class="type-c" title="class">c</sup>, <a href="http://purl.org/dc/terms/Standard" target="_blank" title="http://purl.org/dc/terms/Standard">Standard</a> <sup class="type-c" title="class">c</sup>
+    <a href="#Specification" title="http://data.europa.eu2sa/cssv#Specification">Specification</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     is disjoint with
@@ -493,7 +505,6 @@ This section provides details for each class and property defined by Core Standa
   <li><a href="#https://schema.org/contactPoint" title="https://schema.org/contactPoint">Contact point</a></li>
   <li><a href="#http://purl.org/dc/terms/creator" title="http://purl.org/dc/terms/creator">Creator</a></li>
   <li><a href="#http://www.w3.org/ns/dcat#distribution" title="http://www.w3.org/ns/dcat#distribution"> <span>distribution</span> </a></li>
-  <li><a href="#isAspectOf" title="http://data.europa.eu2sa/cssv#isAspectOf">Is aspect of</a></li>
   <li><a href="#isMaintainedBy" title="http://data.europa.eu2sa/cssv#isMaintainedBy">Is maintained by</a></li>
   <li><a href="#isRecommendedBy" title="http://data.europa.eu2sa/cssv#isRecommendedBy">Is recommended by</a></li>
   <li><a href="#http://www.w3.org/ns/dcat#previousVersion" title="http://www.w3.org/ns/dcat#previousVersion">Previous version</a></li>
@@ -712,37 +723,6 @@ This section provides details for each class and property defined by Core Standa
     </dt>
     <dd>
      <a href="http://www.w3.org/ns/dcat#Distribution" target="_blank" title="http://www.w3.org/ns/dcat#Distribution">Distribution</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="isAspectOf">
-  <h3>Is aspect of<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://data.europa.eu2sa/cssv#isAspectOf</p>
-  <div class="comment">
-   <span class="markdown">ApplicationProfile is a part of a Profile.</span>
-  </div>
-  <dl class="definedBy">
-   <dt>
-    Is defined by
-   </dt>
-   <dd>
-    <a href="http://data.europa.eu/w21/e1f84ab1-bad6-4e95-b37a-e54ba7dfc551">http://data.europa.eu/w21/e1f84ab1-bad6-4e95-b37a-e54ba7dfc551</a>
-   </dd>
-  </dl>
-  <div class="description">
-   <dl>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="#ApplicationProfile" title="http://data.europa.eu2sa/cssv#ApplicationProfile">Application Profile</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>
-     has range
-    </dt>
-    <dd>
-     <a href="https://www.w3.org/TR/dx-prof/#Profile" target="_blank" title="https://www.w3.org/TR/dx-prof/#Profile">Profile</a> <sup class="type-c" title="class">c</sup>
     </dd>
    </dl>
   </div>
@@ -1108,11 +1088,31 @@ This section provides details for each class and property defined by Core Standa
     
 
 <!--REFERENCES SECTION-->
-  <div id="references">
-<h2 id="ref" class="list">References <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-<span class="markdown">
-Add your references here. It is recommended to have them as a list.</span>
-
+<div id="references">
+   <h2 id="ref" class="list">References <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+      <div style="text-decoration: none;">
+         <ul style="list-style-type: none; padding-left: 0;">
+            <li><b>ADMS Vocabulary</b> Retrieved from <a href="https://semiceu.github.io/ADMS/releases/2.00/">https://semiceu.github.io/ADMS/releases/2.00/</a></li>
+            <li><b>ADMS Application Profile (ADMS-AP)</b> Retrieved from <a href="https://interoperable-europe.ec.europa.eu/collection/semic-support-centre/solution/asset-description-metadata-schema-adms/distribution/adms-ap-version-201-pdf">https://interoperable-europe.ec.europa.eu/collection/semic-support-centre/solution/asset-description-metadata-schema-adms/distribution/adms-ap-version-201-pdf</a></li>
+            <li><b>Common Assessment Method for Standards and Specifications (CAMSS). (n.d.).</b> Retrieved from <a href="https://joinup.ec.europa.eu/collection/common-assessment-method-standards-and-specifications-camss/about">https://joinup.ec.europa.eu/collection/common-assessment-method-standards-and-specifications-camss/about</a></li>
+            <li><b>Core Person Vocabulary (CPV). SEMIC, version 2.00, (n.d.).</b> Retrieved from <a href="https://semiceu.github.io/Core-Person-Vocabulary/releases/2.00/">https://semiceu.github.io/Core-Person-Vocabulary/releases/2.00/</a></li>
+            <li><b>CSSV Public Consultation. (n.d.).</b> Retrieved from <a href="https://joinup.ec.europa.eu/collection/common-assessment-method-standards-and-specifications-camss/news/cssv-public-review">https://joinup.ec.europa.eu/collection/common-assessment-method-standards-and-specifications-camss/news/cssv-public-review</a></li>
+            <li><b>Data Catalogue Vocabulary (DCAT). W3C Recommendation, (n.d.).</b> Retrieved from <a href="https://www.w3.org/TR/vocab-dcat-2/">https://www.w3.org/TR/vocab-dcat-2/</a></li>
+            <li><b>DCMI Metadata Terms (DCTerms). Dublin Core Metadata Initiative, (n.d.).</b> Retrieved from <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/">https://www.dublincore.org/specifications/dublin-core/dcmi-terms/</a></li>
+            <li><b>Directorate-General for Internal Market, Industry, Entrepreneurship and SMEs (DG GROW).</b> Retrieved from <a href="https://commission.europa.eu/about/departments-and-executive-agencies/internal-market-industry-entrepreneurship-and-smes_en">https://commission.europa.eu/about/departments-and-executive-agencies/internal-market-industry-entrepreneurship-and-smes_en</a></li>
+            <li><b>EIRA. European Interoperability Reference Architecture. (n.d.).</b> Retrieved from <a href="https://joinup.ec.europa.eu/collection/european-interoperability-reference-architecture-eira/about">https://joinup.ec.europa.eu/collection/european-interoperability-reference-architecture-eira/about</a></li>
+            <li><b>ELIS. EIRA Library of Interoperability Specifications. (n.d.).</b> Retrieved from <a href="https://interoperable-europe.ec.europa.eu/collection/common-assessment-method-standards-and-specifications-camss/solution/elis/release/v610">https://interoperable-europe.ec.europa.eu/collection/common-assessment-method-standards-and-specifications-camss/solution/elis/release/v610</a></li>
+            <li><b>EU Vocabularies. Publications Office of the European Union. (n.d.).</b> Retrieved from <a href="https://publications.europa.eu/en/web/eu-vocabularies/controlled-vocabularies">https://publications.europa.eu/en/web/eu-vocabularies/controlled-vocabularies</a></li>
+            <li><b>Friend of a Friend (FOAF) Vocabulary Specification. (n.d.).</b> Retrieved from <a href="http://xmlns.com/foaf/0.1/">http://xmlns.com/foaf/0.1/</a></li>
+            <li><b>Interoperable Europe Act (IEA).</b> Retrieved from <a href="https://interoperable-europe.ec.europa.eu/interoperable-europe/interoperable-europe-act">https://interoperable-europe.ec.europa.eu/interoperable-europe/interoperable-europe-act</a></li>
+            <li><b>Schema.org. Schema.org Community Group, (n.d.).</b> Retrieved from <a href="https://schema.org/">https://schema.org/</a></li>
+            <li><b>The Organization Ontology (ORG). W3C Recommendation, (n.d.).</b> Retrieved from <a href="https://www.w3.org/TR/vocab-org/">https://www.w3.org/TR/vocab-org/</a></li>
+            <li><b>The Profiles Vocabulary (PROF). World Wide Web Consortium (W3C), (n.d.).</b> Retrieved from <a href="https://www.w3.org/TR/dx-prof/">https://www.w3.org/TR/dx-prof/</a></li>
+            <li><b>The SEMIC Style Guide for Semantic Engineers. Semantic Interoperability Community Europe (SEMIC), (n.d.).</b> Retrieved from <a href="https://semiceu.github.io/style-guide/1.0.0/index.html">https://semiceu.github.io/style-guide/1.0.0/index.html</a></li>
+            <li><b>The SEMIC Style Guide RDF (OWL/SHACL) Validator, (n.d.).</b> Retrieved from <a href="https://meaningfy-ws.github.io/semic-styleguide-rdf-validator/dev/index.html">https://meaningfy-ws.github.io/semic-styleguide-rdf-validator/dev/index.html</a></li>
+            <li><b>W3C XML Schema Definition Language (XSD) 1.1 Part 1: Structures. W3C Recommendation, (n.d.).</b> Retrieved from <a href="https://www.w3.org/TR/xmlschema11-1/">https://www.w3.org/TR/xmlschema11-1/</a></li>
+         </ul>
+      </div>
 </div>
 <div id="acknowledgments">
 <h2 id="ack" class="list">Acknowledgments <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
