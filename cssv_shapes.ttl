@@ -1,177 +1,207 @@
-@prefix sh: <http://www.w3.org/ns/shacl#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dct: <http://purl.org/dc/terms/> .
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix org: <http://www.w3.org/ns/org#> .
 @prefix cssv: <http://data.europa.eu/2sa/cssv#> .
-@prefix csss: <http://data.europa.eu/2sa/cssv/shapes#> .
 
-csss:CSSVShapes a owl:Ontology ;
-    dct:title "Core Standards and Specifications Vocabulary SHACL Shapes"@en ;
-    dct:description "This file contains the SHACL constraints for the Core Standards and Specifications Vocabulary, enforcing domain, range, inverse, and disjointness definitions."@en .
-
+cssv:CSSVShapes a owl:Ontology ;
+	a owl:Ontology ;
+	rdfs:label "CSSV a-box SHACL shapes to validate Specifications."@en ;
+	rdfs:comment "CSSV a-box SHACL shapes to validate Specifications."@en ;
+	dct:modified "2025-11-03" ;
+	owl:versionInfo "v1.0.0"@en .
+    
 #################################################################
-# csss:SpecificationShape
+# cssv:SpecificationShape
 #################################################################
-csss:SpecificationShape a sh:NodeShape ;
+cssv:SpecificationShape a sh:NodeShape ;
     sh:targetClass cssv:Specification ;
     rdfs:label "Specification Shape"@en ;
 
-    # --- Data Property Constraints (Domain: cssv:Specification) ---
+    #################################################################
+    ## Minimum required properties
+    #################################################################
 
     sh:property [
-        # cssv:acronym (Data Property)
-        sh:path cssv:acronym ;
-        sh:datatype rdfs:Literal ; # Range constraint (rdfs:range rdfs:Literal)
-        sh:name "Acronym" ;
-        sh:severity sh:Violation ;
-    ] ;
-    sh:property [
-        # cssv:alternative (Data Property)
-        sh:path cssv:alternative ;
-        sh:datatype rdfs:Literal ; # Range constraint (rdfs:range rdfs:Literal)
-        sh:name "Alternative" ;
+        sh:path dct:title ;
+        sh:minCount 1 ;
+        sh:message "A cssv:Specification must have at least one dct:title."@en ;
         sh:severity sh:Violation ;
     ] ;
 
-    # --- Object Property Constraints (Domain: cssv:Specification) ---
-
     sh:property [
-        # cssv:isMaintainedBy
         sh:path cssv:isMaintainedBy ;
-        sh:class foaf:Agent ; # Range constraint (rdfs:range foaf:Agent)
-        sh:name "Is maintained by" ;
+        sh:minCount 1 ;
+        sh:message "A cssv:Specification must specify cssv:isMaintainedBy."@en ;
         sh:severity sh:Violation ;
     ] ;
+
     sh:property [
-        # cssv:isRecommendedBy
+        sh:path dcat:distribution ;
+        sh:minCount 1 ;
+        sh:message "A cssv:Specification must have at least one dcat:distribution."@en ;
+        sh:severity sh:Violation ;
+    ] ;
+
+    #################################################################
+    ## Range/domain constraints for properties
+    #################################################################
+
+    sh:property [
+        sh:path cssv:isMaintainedBy ;
+        sh:class org:Organization ;
+        sh:message "cssv:isMaintainedBy must point to an org:Organization."@en ;
+        sh:severity sh:Violation ;
+    ] ;
+
+    sh:property [
         sh:path cssv:isRecommendedBy ;
-        sh:class foaf:Agent ; # Range constraint (rdfs:range foaf:Agent)
-        sh:name "Is recommended by" ;
+        sh:class org:Organization ;
+        sh:message "cssv:isRecommendedBy must point to an foaf:Agent."@en ;
         sh:severity sh:Violation ;
     ] ;
 
     sh:property [
-        # cssv:combinedIn
         sh:path cssv:combinedIn ;
-        sh:class cssv:Family ; # Range constraint (rdfs:range cssv:Family)
-        sh:name "Combined in" ;
+        sh:class cssv:Family ;
+        sh:message "cssv:combinedIn must point to a cssv:Family."@en ;
         sh:severity sh:Violation ;
-    ] ;
-    sh:property [
-        # cssv:configuredIn
-        sh:path cssv:configuredIn ;
-        sh:class cssv:ApplicationProfile ; # Range constraint (rdfs:range cssv:ApplicationProfile)
-        sh:name "Configured in" ;
-        sh:severity sh:Violation ;
-    ] ;
-    
-    # Inverse Constraint: cssv:combinedIn <--> cssv:combines
-    # If a Specification (?this) is combined in a Family (?target), that Family must combine ?this.
-    sh:property [
-        sh:path cssv:combinedIn ;
-        sh:name "Combined in (Inverse check)" ;
-        sh:severity sh:Violation ;
-        sh:sparql [
-            sh:message "If a Specification is cssv:combinedIn a Family, that Family must cssv:combines the Specification (Inverse of cssv:combines)."@en ;
-            sh:select """
-                SELECT $this (GROUP_CONCAT(?target) AS ?target) WHERE {
-                    $this cssv:combinedIn ?target .
-                    FILTER NOT EXISTS { ?target cssv:combines $this }
-                }
-            """
-        ]
     ] ;
 
-    # Inverse Constraint: cssv:configuredIn <--> cssv:configures
-    # If a Specification (?this) is configured in an Application Profile (?target), that AP must configure ?this.
     sh:property [
         sh:path cssv:configuredIn ;
-        sh:name "Configured in (Inverse check)" ;
+        sh:class cssv:ApplicationProfile ;
+        sh:message "cssv:configuredIn must point to a cssv:ApplicationProfile."@en ;
         sh:severity sh:Violation ;
+    ] ;
+
+    #################################################################
+    ## Inverse constraints
+    #################################################################
+
+    sh:property [
+        sh:path cssv:combinedIn ;
+        sh:message "Inverse violation: Each Family that a Specification is combinedIn must combine the Specification."@en ;
         sh:sparql [
-            sh:message "If a Specification is cssv:configuredIn an Application Profile, that Profile must cssv:configures the Specification (Inverse of cssv:configures)."@en ;
             sh:select """
-                SELECT $this (GROUP_CONCAT(?target) AS ?target) WHERE {
-                    $this cssv:configuredIn ?target .
-                    FILTER NOT EXISTS { ?target cssv:configures $this }
+                SELECT $this ?family WHERE {
+                    $this cssv:combinedIn ?family .
+                    FILTER NOT EXISTS { ?family cssv:combines $this }
                 }
-            """
-        ]
+            """ ;
+        ] ;
+    ] ;
+
+    sh:property [
+        sh:path cssv:configuredIn ;
+        sh:message "Inverse violation: Each AP that a Specification is configuredIn must cssv:configures the Specification."@en ;
+        sh:sparql [
+            sh:select """
+                SELECT $this ?ap WHERE {
+                    $this cssv:configuredIn ?ap .
+                    FILTER NOT EXISTS { ?ap cssv:configures $this }
+                }
+            """ ;
+        ] ;
+    ] ;
+
+    #################################################################
+    ## Distribution must have dcat:accessURL
+    #################################################################
+
+    sh:sparql [
+        sh:message "Each dcat:distribution must include a dcat:accessURL." ;
+        sh:select """
+            SELECT $this ?distribution WHERE {
+                $this dcat:distribution ?distribution .
+                FILTER NOT EXISTS { ?distribution dcat:accessURL ?url }
+            }
+        """ ;
+    ] ;
+
+    #################################################################
+    ## Maintainer must have skos:prefLabel
+    #################################################################
+
+    sh:sparql [
+        sh:message "The organisation in cssv:isMaintainedBy must have a skos:prefLabel." ;
+        sh:select """
+            SELECT $this ?org WHERE {
+                $this cssv:isMaintainedBy ?org .
+                FILTER NOT EXISTS { ?org skos:prefLabel ?label }
+            }
+        """ ;
     ] .
 
 #################################################################
-# csss:ApplicationProfileShape
+# cssv:ApplicationProfileShape
 #################################################################
-csss:ApplicationProfileShape a sh:NodeShape ;
+cssv:ApplicationProfileShape a sh:NodeShape ;
     sh:targetClass cssv:ApplicationProfile ;
     rdfs:label "Application Profile Shape"@en ;
+    sh:severity sh:Info ;
 
-    # --- Property Constraints (Domain: cssv:ApplicationProfile) ---
     sh:property [
-        # cssv:configures
         sh:path cssv:configures ;
-        sh:class cssv:Specification ; # Range constraint (rdfs:range cssv:Specification)
-        sh:name "Configures" ;
+        sh:class cssv:Specification ;
+        sh:message "cssv:configures must point to a cssv:Specification."@en ;
         sh:severity sh:Violation ;
     ] ;
 
-    # --- Disjointness Constraints (owl:disjointWith using sh:not) ---
-    # cssv:ApplicationProfile is disjoint with cssv:Family and cssv:Standard
+    # Disjointness: cannot be Standard or Family
+    sh:not [
+        sh:class cssv:Standard ;
+        sh:message "An ApplicationProfile cannot be a cssv:Standard."@en ;
+        sh:severity sh:Warning ;
+    ] ;
+
     sh:not [
         sh:class cssv:Family ;
-        sh:message "An ApplicationProfile cannot be an instance of cssv:Family (Disjointness constraint)."@en ;
-        sh:severity sh:Violation ;
-    ] ;
-    sh:not [
-        sh:class cssv:Standard ;
-        sh:message "An ApplicationProfile cannot be an instance of cssv:Standard (Disjointness constraint)."@en ;
-        sh:severity sh:Violation ;
+        sh:message "An ApplicationProfile cannot be a cssv:Family."@en ;
+        sh:severity sh:Warning ;
     ] .
 
 #################################################################
-# csss:FamilyShape
+# cssv:FamilyShape
 #################################################################
-csss:FamilyShape a sh:NodeShape ;
-    sh:targetClass cssv:Family ;
-    rdfs:label "Family Shape"@en ;
-
-    # --- Property Constraints (Domain: cssv:Family) ---
-    sh:property [
-        # cssv:combines
-        sh:path cssv:combines ;
-        sh:class cssv:Specification ; # Range constraint (rdfs:range cssv:Specification)
-        sh:name "Combines" ;
-        sh:severity sh:Violation ;
-    ] ;
-
-    # --- Disjointness Constraints (owl:disjointWith using sh:not) ---
-    # cssv:Family is disjoint with cssv:Standard
-    sh:not [
-        sh:class cssv:Standard ;
-        sh:message "A Family cannot be an instance of cssv:Standard (Disjointness constraint)."@en ;
-        sh:severity sh:Violation ;
-    ] .
-
-#################################################################
-# csss:StandardShape
-#################################################################
-csss:StandardShape a sh:NodeShape ;
+cssv:StandardShape a sh:NodeShape ;
     sh:targetClass cssv:Standard ;
     rdfs:label "Standard Shape"@en ;
-    sh:severity sh:Violation ; # ADDITION: Ensures DSC-R5 compliance for the overall shape
+    sh:severity sh:Info ;
 
-    # --- Disjointness Constraints (owl:disjointWith using sh:not) ---
-    # cssv:Standard is disjoint with cssv:ApplicationProfile
+    # Disjoint with AP and Family
     sh:not [
         sh:class cssv:ApplicationProfile ;
-        sh:message "A Standard cannot be an instance of cssv:ApplicationProfile (Disjointness constraint)."@en ;
-        sh:severity sh:Violation ;
+        sh:message "A Standard cannot be a cssv:ApplicationProfile."@en ;
+        sh:severity sh:Warning ;
     ] ;
-    # cssv:Standard is disjoint with cssv:Family
+
     sh:not [
         sh:class cssv:Family ;
-        sh:message "A Standard cannot be an instance of cssv:Family (Disjointness constraint)."@en ;
-        sh:severity sh:Violation ;
+        sh:message "A Standard cannot be a cssv:Family."@en ;
+        sh:severity sh:Warning ;
+    ] .
+
+#################################################################
+# cssv:StandardShape
+#################################################################
+cssv:StandardShape a sh:NodeShape ;
+    sh:targetClass cssv:Standard ;
+    rdfs:label "Standard Shape"@en ;
+    sh:severity sh:Info ;
+
+    # Disjoint with AP and Family
+    sh:not [
+        sh:class cssv:ApplicationProfile ;
+        sh:message "A Standard cannot be a cssv:ApplicationProfile."@en ;
+        sh:severity sh:Warning ;
+    ] ;
+
+    sh:not [
+        sh:class cssv:Family ;
+        sh:message "A Standard cannot be a cssv:Family."@en ;
+        sh:severity sh:Warning ;
     ] .
