@@ -1,7 +1,7 @@
 # Core Standards and Specifications Vocabulary (CSSV)
 
 [![License](https://img.shields.io/badge/License-EUPL%201.2-blue.svg)](https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12)
-[![Latest Release](https://img.shields.io/badge/version-1.4.1-green.svg)](https://interoperable-europe.ec.europa.eu/collection/common-assessment-method-standards-and-specifications-camss/solution/core-standards-and-specifications-vocabulary-cssv)
+[![Latest Release](https://img.shields.io/badge/version-2.0.0-green.svg)](https://interoperable-europe.ec.europa.eu/collection/common-assessment-method-standards-and-specifications-camss/solution/core-standards-and-specifications-vocabulary-cssv)
 
 ## 📋 Overview
 
@@ -24,24 +24,7 @@ CSSV addresses these challenges by providing:
 ✅ **Semantic interoperability** through reuse of established vocabularies (DCAT, FOAF, etc.)  
 ✅ **Extensibility** to accommodate domain-specific needs  
 
-## 🚀 Key Use Cases
-
-### 1. **Building Interoperability Libraries**
-CSSV is the foundation for ELIS, which catalogues standards and specifications relevant to European digital public services.
-
-### 2. **Standards Assessment and Selection**
-Used in conjunction with CAMSS
-
-### 3. **Cross-Border Service Implementation**
-For organisations deploying interoperable digital services
-
-### 4. **Knowledge Management**
-Within organisations and ecosystems
-
-### 5. **Automated System Integration**
-For software systems and platforms
-
-## 🏗️ Architecture and Design Principles
+## 🏗️ Design Principles
 
 CSSV follows two fundamental principles:
 
@@ -62,7 +45,7 @@ Isolate technical and business limitations and rules as much as possible to ensu
 This repository contains the formal specification and implementation files for CSSV:
 
 ```
-CAV/
+CSSV/
 │── uml                                   # The CSSV UML.
 │   ├── CSSV_UML_v2.0.0.drawio          # The CSSV UML in drawio format.
 │   └── CSSV_UML_v2.0.0.png             # The CSSV UML in png format.
@@ -75,12 +58,8 @@ CAV/
 
 ## 🌍 Relationship to Other Initiatives
 
-### CAMSS (Common Assessment Method for Standards and Specifications)
-CAV supports Digital Europe's goals for interoperable digital public services through structured assessment capabilities. It is the key element for the development and maintenance of 
-the EIRA Library of Interoperability Specifications (ELIS).
-
 ### SEMIC
-CAV is one of the core vocabularies, alongside other vocabularies developed by SEMIC.
+The CSSV, even though is evolved and maintained by the CAMSS Action, it is part of the Core Vocabularies that SEMIC is providing. All of them, including the CSSV are labelled as Interoperable European Solutions (IES)
 
 ## 📚 Additional and Learning Resources
 
@@ -110,13 +89,14 @@ CSSV has been developed through public consultation with input from various stak
 For questions, feedback, or collaboration opportunities:
 - Open an issue in this repository
 - Visit the [Interoperable Europe Portal](https://interoperable-europe.ec.europa.eu/)
-- Contact the CAMSS team through official channels
+- Contact the CAMSS team through official channels: DIGIT-CAMSS@ec.europa.eu
 - Join the CAMSS community discussions
 
 ## 🔄 Version History
 
 - **v2.0.0** (Latest): Current stable release
-- **v1.4.0**: Last stable release
+- **v1.4.1**: Bug-fix release of CSSV removing references to OWL redefinitions of external terms
+- **v1.4.0**: Alignment with SEMIC style guide practices
 - **v1.3.0**: Added enhanced metadata properties
 - **v1.2.0**: Improved alignment with DCAT
 - **v1.1.0**: Extended with assessment-related concepts
@@ -126,6 +106,6 @@ See the full release history [here](https://interoperable-europe.ec.europa.eu/co
 
 ---
 
-**Maintained by**: ISA² Programme / Interoperable Europe  
+**Maintained by**: DIGIT.B2  
 **Last Updated**: 2026  
 **Status**: Active development and maintenance
