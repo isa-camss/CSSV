@@ -18,7 +18,7 @@
 @prefix vann: <http://purl.org/vocab/vann/> .
 @base <http://data.europa.eu/2sa/cssv#> .
 
-<http://data.europa.eu2sa/cssv> a owl:Ontology ;
+<http://data.europa.eu/2sa/cssv> a owl:Ontology ;
                                   owl:versionIRI cssv: ;
                                   owl:imports dct: ,
                                     rdfs: ,
